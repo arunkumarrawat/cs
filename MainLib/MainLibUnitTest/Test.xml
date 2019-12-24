@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ObjectList>
+  <user name="name1" password="xxxx"/>
+  <user name="name2" password="xxxx"/>
+  <user name="name3" password="xxxx"/>
+  <user name="name4" password="xxxx"/>
+</ObjectList>

@@ -1,0 +1,54 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MainLib", "MainLib\MainLib.csproj", "{8816AF68-0F31-4E03-AFB8-6BA46A49E61F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MainLibUnitTest", "MainLibUnitTest\MainLibUnitTest.csproj", "{9C0D8197-102F-415F-8E1B-083F06F829EC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{F415578A-30A4-4151-9696-A8C7A5AD0151}"
+	ProjectSection(SolutionItems) = preProject
+		Local.testsettings = Local.testsettings
+		MainLib.vsmdi = MainLib.vsmdi
+		TraceAndTestImpact.testsettings = TraceAndTestImpact.testsettings
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TelerikUI", "TelerikUI\TelerikUI.csproj", "{F60FF73B-7CA1-4069-88D8-B6FEDEDB308B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OfficeLib", "OfficeLib\OfficeLib.csproj", "{E982EA7F-CAC0-4CE9-BB2C-CABA2AA15916}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NMZipLib", "NMZipLib\NMZipLib.csproj", "{7C5BAC7C-CA41-41CD-B752-C0D7B8ADB168}"
+EndProject
+Global
+	GlobalSection(TestCaseManagementSettings) = postSolution
+		CategoryFile = MainLib.vsmdi
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8816AF68-0F31-4E03-AFB8-6BA46A49E61F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8816AF68-0F31-4E03-AFB8-6BA46A49E61F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8816AF68-0F31-4E03-AFB8-6BA46A49E61F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8816AF68-0F31-4E03-AFB8-6BA46A49E61F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9C0D8197-102F-415F-8E1B-083F06F829EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9C0D8197-102F-415F-8E1B-083F06F829EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9C0D8197-102F-415F-8E1B-083F06F829EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9C0D8197-102F-415F-8E1B-083F06F829EC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F60FF73B-7CA1-4069-88D8-B6FEDEDB308B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F60FF73B-7CA1-4069-88D8-B6FEDEDB308B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F60FF73B-7CA1-4069-88D8-B6FEDEDB308B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F60FF73B-7CA1-4069-88D8-B6FEDEDB308B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E982EA7F-CAC0-4CE9-BB2C-CABA2AA15916}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E982EA7F-CAC0-4CE9-BB2C-CABA2AA15916}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E982EA7F-CAC0-4CE9-BB2C-CABA2AA15916}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E982EA7F-CAC0-4CE9-BB2C-CABA2AA15916}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7C5BAC7C-CA41-41CD-B752-C0D7B8ADB168}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7C5BAC7C-CA41-41CD-B752-C0D7B8ADB168}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7C5BAC7C-CA41-41CD-B752-C0D7B8ADB168}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7C5BAC7C-CA41-41CD-B752-C0D7B8ADB168}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
