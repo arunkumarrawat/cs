@@ -62,6 +62,7 @@
     <Compile Include="ReflectionUtilTest.cs" />
     <Compile Include="LinqTest.cs" />
     <Compile Include="JsonHelperTest.cs" />
+    <Compile Include="AlgorithmTest.cs" />
     <Compile Include="XMLOpTest.cs" />
   </ItemGroup>
   <ItemGroup>
