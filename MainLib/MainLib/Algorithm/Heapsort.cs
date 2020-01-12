@@ -1,7 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 
 namespace MainLib.Algorithm
 {
@@ -10,6 +7,34 @@ namespace MainLib.Algorithm
     /// </summary>
     public class Heapsort
     {
+        private int[] op_array;
+        private int heapSize;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public int HeapSize
+        {
+            get
+            {
+                return heapSize;
+            }
+
+            set
+            {
+                heapSize = value;
+            }
+        }
+
+        /// <summary>
+        /// Heap Sort
+        /// </summary>
+        /// <param name="op_array"></param>
+        public Heapsort(int[] op_array)
+        {
+            this.op_array = op_array;
+            this.HeapSize = op_array.Length;
+        }
         /// <summary>
         /// heap sort parent node
         /// </summary>
@@ -17,7 +42,10 @@ namespace MainLib.Algorithm
         /// <returns></returns>
         private int Parent(int i)
         {
-            return i / 2;
+            if (i == 0)
+                return 0;
+
+            return (i + 1) / 2 - 1;
         }
 
         /// <summary>
@@ -25,29 +53,74 @@ namespace MainLib.Algorithm
         /// </summary>
         /// <param name="i"></param>
         /// <returns></returns>
-        private int Left(int i)
+        int Left(int i)
         {
-            return 2 * i;
+            return 2 * (i + 1) - 1;
         }
 
-        /// <summary>
-        /// Right i
-        /// </summary>
-        /// <param name="i"></param>
-        /// <returns></returns>
-        private int Right(int i)
+        int Right(int i)
         {
-            return 2 * i + 1;
+            return 2 * (i + 1);
+        }
+
+        void MaxHeapify(int i)
+        {
+            int l = Left(i);
+            int r = Right(i);
+
+            int largest = i;
+
+            if (l < HeapSize && op_array[l] > op_array[i])
+                largest = l;
+
+            if (r < HeapSize && op_array[r] > op_array[largest])
+                largest = r;
+
+            if (largest != i)
+            {
+                // exchange(&op_array[i],&op_array[largest]);
+                int temp = op_array[i];
+                op_array[i] = op_array[largest];
+                op_array[largest] = temp;
+
+                MaxHeapify(largest);
+            }
+        }
+
+
+        public void Build_Max_Heap()
+        {
+            int i = 0;
+            for (i = op_array.Length / 2 - 1; i >= 0; i--)
+                MaxHeapify(i);
         }
 
         /// <summary>
         /// 
         /// </summary>
-        /// <param name="array"></param>
-        /// <param name="i"></param>
-        private void MaxHeapify(int[] array, int i)
+        public void MaxHeapSort()
         {
+            Build_Max_Heap();
 
+            for (int i = op_array.Length - 1; i >= 1; i--)
+            {
+                int temp = op_array[0];
+                op_array[0] = op_array[i];
+                op_array[i] = temp;
+                HeapSize--;
+                MaxHeapify(0);
+            }
+
+            printArray();
         }
+
+        void printArray()
+        {
+            for (int i = 0; i < op_array.Length; i++)
+                Console.Write("{0}\t", op_array[i]);
+
+            Console.WriteLine();
+        }
+
     }
 }
