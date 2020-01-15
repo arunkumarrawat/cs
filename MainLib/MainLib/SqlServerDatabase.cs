@@ -27,7 +27,22 @@ namespace MainLib
             this.host = host;
             this.databaseName = databaseName;
 
-            connectToSQL = "Data Source=" + host + ";Initial Catalog=" + databaseName + ";Integrated Security=True";
+            connectToSQL = "Data Source=" + host + ";Initial Catalog=" + databaseName;
+        }
+
+        /// <summary>
+        /// sql server database
+        /// </summary>
+        /// <param name="host"></param>
+        /// <param name="databaseName"></param>
+        /// <param name="username"></param>
+        /// <param name="password"></param>
+        public SqlServerDatabase(string host, string databaseName, string username, string password)
+        {
+            this.host = host;
+            this.databaseName = databaseName;
+
+            connectToSQL = "Data Source=" + host + ";Initial Catalog=" + databaseName + ";User ID=" + username + ";Password=" + password;
         }
 
         /// <summary>

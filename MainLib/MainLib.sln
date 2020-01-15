@@ -36,6 +36,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Projects", "Projects", "{E4
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZipRar", "ZipRar\ZipRar.csproj", "{544D1AD1-4F90-4113-AA8C-C1B1A8E9E5CB}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Example", "Example", "{31B2A62C-20D7-4E2E-B444-029222782F47}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConnectToSqlServer", "ConnectToSqlServer\ConnectToSqlServer.csproj", "{4F429211-D7D0-43C8-9FC2-ACE6A0AAB777}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -86,6 +90,10 @@ Global
 		{544D1AD1-4F90-4113-AA8C-C1B1A8E9E5CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{544D1AD1-4F90-4113-AA8C-C1B1A8E9E5CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{544D1AD1-4F90-4113-AA8C-C1B1A8E9E5CB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4F429211-D7D0-43C8-9FC2-ACE6A0AAB777}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4F429211-D7D0-43C8-9FC2-ACE6A0AAB777}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4F429211-D7D0-43C8-9FC2-ACE6A0AAB777}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4F429211-D7D0-43C8-9FC2-ACE6A0AAB777}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -95,6 +103,7 @@ Global
 		{5D89A17D-E7F2-41A1-A269-00B630A12450} = {875AC2B2-2C7C-45C0-B0E4-8BDE7F18FC8B}
 		{51DFA2F4-DF5A-48C4-8F89-9EBCA67C8AE6} = {875AC2B2-2C7C-45C0-B0E4-8BDE7F18FC8B}
 		{544D1AD1-4F90-4113-AA8C-C1B1A8E9E5CB} = {E4BB6BF7-4433-4EF6-A7A6-F1E7767945F6}
+		{4F429211-D7D0-43C8-9FC2-ACE6A0AAB777} = {31B2A62C-20D7-4E2E-B444-029222782F47}
 	EndGlobalSection
 	GlobalSection(TestCaseManagementSettings) = postSolution
 		CategoryFile = MainLib.vsmdi
