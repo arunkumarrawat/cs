@@ -5,6 +5,9 @@ using System.Text;
 
 namespace MainLib
 {
+    /// <summary>
+    /// all functions related with Enum
+    /// </summary>
     public class CEnum
     {
         private enum EnumTest
@@ -13,6 +16,27 @@ namespace MainLib
             Test2,
             Test3
         };
+
+        enum EmpType : byte
+        {
+            Manager = 10,
+            Grunt = 1,
+            Contractor = 100,
+            VicePresident = 9
+        }
+
+        /// <summary>
+        /// print out all information for Enum
+        /// </summary>
+        public void EnumInfo()
+        {
+            EmpType e = EmpType.Manager;
+
+            Console.WriteLine("Enum Name: " + e.GetType().Name);
+            Console.WriteLine("Underlying storage type: {0}",
+              Enum.GetUnderlyingType(e.GetType()));
+        }
+
         /// <summary>
         /// Convert Enum to List
         /// </summary>
@@ -38,6 +62,16 @@ namespace MainLib
                 System.Diagnostics.Trace.WriteLine(p);
 
             //System.Diagnostics.Trace.WriteLine();
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="args"></param>
+        public static void Main(String[] args)
+        {
+            CEnum s = new CEnum();
+            s.EnumInfo();
         }
     }
 }
