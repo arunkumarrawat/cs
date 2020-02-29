@@ -35,6 +35,17 @@ namespace MainLib
             Console.WriteLine("Enum Name: " + e.GetType().Name);
             Console.WriteLine("Underlying storage type: {0}",
               Enum.GetUnderlyingType(e.GetType()));
+
+            Array enumData = Enum.GetValues(e.GetType());
+            Console.WriteLine("This enum has {0} members.", enumData.Length);
+
+            // Now show the string name and associated value.
+            for (int i = 0; i < enumData.Length; i++)
+            {
+                Console.WriteLine("Name: {0}, Value: {0:D}",
+                  enumData.GetValue(i));
+            }
+            Console.WriteLine();
         }
 
         /// <summary>
