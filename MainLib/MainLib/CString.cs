@@ -62,10 +62,12 @@ namespace MainLib
         /// 
         /// </summary>
         /// <param name="str"></param>
+        /// <param name="startIndex"></param>
+        /// <param name="length"></param>
         /// <returns></returns>
-        private string subString(string str)
+        private string subString(string str, int startIndex, int length)
         {
-            return string.Empty;
+            return str.Substring(startIndex, length);
         }
 
         /// <summary>
