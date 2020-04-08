@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MainLibUnitTest;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,7 +11,7 @@ namespace MainLibCLI
     {
         static void Main(string[] args)
         {
-            CEnumTest.TMain(args);
+            IEnumerableTest.TMain(args);
         }
     }
 }
