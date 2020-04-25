@@ -53,6 +53,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CFileTest.cs" />
+    <Compile Include="IEnumerableTest.cs" />
     <Compile Include="NMSystemTest.cs" />
     <Compile Include="CPingTest.cs" />
     <Compile Include="NMSocketUnitTest.cs" />

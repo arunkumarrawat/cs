@@ -38,6 +38,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZipRar", "ZipRar\ZipRar.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MainLibCLI", "MainLibCLI\MainLibCLI.csproj", "{CE20B59B-65DC-4E1B-AD97-372871EDC686}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NPing", "NPing\NPing.csproj", "{A594D774-3F8E-4001-AEA2-59A33C6C5DD3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -92,6 +94,10 @@ Global
 		{CE20B59B-65DC-4E1B-AD97-372871EDC686}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CE20B59B-65DC-4E1B-AD97-372871EDC686}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CE20B59B-65DC-4E1B-AD97-372871EDC686}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A594D774-3F8E-4001-AEA2-59A33C6C5DD3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A594D774-3F8E-4001-AEA2-59A33C6C5DD3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A594D774-3F8E-4001-AEA2-59A33C6C5DD3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A594D774-3F8E-4001-AEA2-59A33C6C5DD3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -101,6 +107,7 @@ Global
 		{5D89A17D-E7F2-41A1-A269-00B630A12450} = {875AC2B2-2C7C-45C0-B0E4-8BDE7F18FC8B}
 		{51DFA2F4-DF5A-48C4-8F89-9EBCA67C8AE6} = {875AC2B2-2C7C-45C0-B0E4-8BDE7F18FC8B}
 		{544D1AD1-4F90-4113-AA8C-C1B1A8E9E5CB} = {E4BB6BF7-4433-4EF6-A7A6-F1E7767945F6}
+		{A594D774-3F8E-4001-AEA2-59A33C6C5DD3} = {875AC2B2-2C7C-45C0-B0E4-8BDE7F18FC8B}
 	EndGlobalSection
 	GlobalSection(TestCaseManagementSettings) = postSolution
 		CategoryFile = MainLib.vsmdi
