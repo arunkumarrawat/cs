@@ -6,6 +6,9 @@ using System.Text;
 
 namespace MainLib
 {
+    /// <summary>
+    /// String Helper
+    /// </summary>
     public class CString
     {
         #region Low and UP
@@ -101,6 +104,16 @@ namespace MainLib
         public string NumberWithFirstTwoAfterPoint(int d)
         {
             return d.ToString("#,##0.00");
+        }
+
+        /// <summary>
+        /// add stringToByte
+        /// </summary>
+        /// <param name="s"></param>
+        /// <returns></returns>
+        public byte[] stringToByte(string s)
+        {
+            return Encoding.ASCII.GetBytes(s);
         }
     }
 }

@@ -43,11 +43,59 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FtpCommands\AlloCommandHandler.cs" />
+    <Compile Include="FtpCommands\AppendCommandHandler.cs" />
+    <Compile Include="FtpCommands\CwdCommandHandler.cs" />
+    <Compile Include="FtpCommands\DeleCommandHandler.cs" />
+    <Compile Include="FtpCommands\ListCommandHandler.cs" />
+    <Compile Include="FtpCommands\MakeDirectoryCommandHandler.cs" />
+    <Compile Include="FtpCommands\NlstCommandHandler.cs" />
+    <Compile Include="FtpCommands\NoopCommandHandler.cs" />
+    <Compile Include="FtpCommands\PasswordCommandHandler.cs" />
+    <Compile Include="FtpCommands\PasvCommandHandler.cs" />
+    <Compile Include="FtpCommands\PortCommand.cs" />
+    <Compile Include="FtpCommands\PwdCommandHandler.cs" />
+    <Compile Include="FtpCommands\QuitCommandHandler.cs" />
+    <Compile Include="FtpCommands\RemoveDirectoryCommandHandler.cs" />
+    <Compile Include="FtpCommands\RenameCompleteCommandHandler.cs" />
+    <Compile Include="FtpCommands\RenameStartCommandHandler.cs" />
+    <Compile Include="FtpCommands\RetrCommandHandler.cs" />
+    <Compile Include="FtpCommands\StoreCommandHandler.cs" />
+    <Compile Include="FtpCommands\TypeCommandHandler.cs" />
+    <Compile Include="FtpCommands\UserCommandHandler.cs" />
+    <Compile Include="FtpCommands\XMkdCommandHandler.cs" />
+    <Compile Include="FtpCommands\XPwdCommandHandler.cs" />
+    <Compile Include="FtpCommands\XRmdCommandHandler.cs" />
+    <Compile Include="ftp\ArrayHelpers.cs" />
+    <Compile Include="ftp\FileNameHelpers.cs" />
+    <Compile Include="ftp\FtpCommandHandler.cs" />
+    <Compile Include="ftp\FtpConnectionData.cs" />
+    <Compile Include="ftp\FtpConnectionObject.cs" />
+    <Compile Include="ftp\FtpReplySocket.cs" />
+    <Compile Include="ftp\FtpServerMessageHandler.cs" />
+    <Compile Include="ftp\interface.cs" />
+    <Compile Include="ftp\ListCommandHandlerBase.cs" />
+    <Compile Include="ftp\MakeDirectoryCommandHandlerBase.cs" />
+    <Compile Include="ftp\PwdCommandHandlerBase.cs" />
+    <Compile Include="ftp\RemoveDirectoryCommandHandlerBase.cs" />
+    <Compile Include="FtpCommands\SizeCommandHandler.cs" />
+    <Compile Include="ftp\SocketHelpers.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="data\user.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MainLib\MainLib.csproj">
+      <Project>{8816af68-0f31-4e03-afb8-6ba46a49e61f}</Project>
+      <Name>MainLib</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
