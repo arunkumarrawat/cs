@@ -1,0 +1,41 @@
+﻿* 2012-3-15
+同步
+实现同步的3种方法:
+1、Thread.Join()
+2、WaitHandle
+      //使用自动事件
+   AutoResetEvent asyncOpIsDone = new AutoResetEvent(false);
+   ThreadPool.QueueUserWorkItem(new WaitCallback(MyAsyncOperation),asyncOpIsDone);
+   asyncOpIsDone.WaitOne();//asyncOpIsDone自动被复位
+   
+   ThreadPool.QueueUserWorkItem(new WaitCallback(MyAsyncOperation),asyncOpIsDone);
+   asyncOpIsDone.WaitOne();//asyncOpIsDone自动被复位
+   
+   //使用手工代码
+   ManualResetEvent masyncOpIsDone = new AutoResetEvent(false);
+   ThreadPool.QueueUserWorkItem(new WaitCallback(MyAsyncOperation),masyncOpIsDone);
+   masyncOpIsDone.WaitOne();//asyncOpIsDone自动被复位
+   //masyncOpIsDone仍处于有信号状态
+   //必须手工复位
+   masyncOpIsDone.Reset(); //如果该代码注释掉，则主线程不会等待第2个子线程结束。
+   
+   ThreadPool.QueueUserWorkItem(new WaitCallback(MyAsyncOperation),masyncOpIsDone);
+   masyncOpIsDone.WaitOne();//asyncOpIsDone自动被复位
+3、Monitor
+
+* 2012-3-4
+  Telerik
+  DateTable dt;
+  this.radGridView.DataSource=dt;
+  FieldName of radGridView will combine the columns of datatable to GridView
+
+  visual c++
+  problem: cmd->cl.exe will pop up error
+  copy mspdb100.dll,mspdbcore.dll,mspdbsrv.exe,mspdbst.dll to VC/bin (vs2010)
+  copy mspdb80.dll,mspdbcore.dll,mspdbsrv.exe,mspdbst.dll to VC/bin (vs2008)
+
+  cl.exe
+* 2012-2-25
+  net start MSSQLSERVER
+  net stop MSSQLSERVER
+  sqlcmd

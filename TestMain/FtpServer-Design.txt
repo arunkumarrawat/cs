@@ -1,0 +1,39 @@
+class service : interface xxx
+{
+List <- userinfo.LOAD-FROM-XML();
+thread.start(function);
+
+  public void add-user-button(...)
+  {
+     add-user-to-list(List);
+     SAVE-TO-XML-FILE(List);
+  }
+}
+
+void function(object adf)
+{
+   while(true)
+   {
+     network.listen(21);
+     
+     string <- network.getstring();
+     PARSE-MESSAGE(string);
+     APPEND-MESSAGE(textbox); // append message to textbox of main windows.
+
+     finalString <- CALL-DISPATCHER(keyNumber);
+
+     SendToClient(finalString);
+     DO-SOMETHING(port);
+   }
+}
+
+void DO-SOMETHING(port,something)
+{
+   while(true)
+   {
+      network.listen(port);
+      Transfer(something);
+   }
+   Close(port);
+   Free(something);
+}

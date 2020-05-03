@@ -1,0 +1,2 @@
+*** C# service   
+   (open-history-file "d:/workspace/c/my-lib/test/TestMain/ServiceWithMultithread/Program.cs" 15 "")

@@ -1,0 +1,8 @@
+﻿1. insert data block
+
+site controller-Id block-name downloadType Total version﻿
+
+
+2.
+
+List<string> list = {"RA0.DAT","RA1.DAT","RA2.DAT","RN4.DAT"}

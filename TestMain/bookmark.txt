@@ -1,0 +1,2 @@
+* 2012-9-23
+  D:\workspace\c\my-lib\test\TestMain\PendingConfig\Form1.cs

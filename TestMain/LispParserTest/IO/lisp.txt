@@ -1,0 +1,18 @@
+﻿(- 2 3)
+(setq abc "I don't want to saying")
+(+ 1 (+ 2 3) 4)
+(+ 12.34	 (+ 234 356) 3454)
+
+(defun abc()
+   (interactive)
+   (+ 2 3)
+   (pron
+      (- 2 3)
+	  (move -1)
+   )
+
+(defun find-function-other-window (function)
+  (interactive (find-function-read))
+  (find-function-do-it function nil switch-to-buffer-other-window))
+
+

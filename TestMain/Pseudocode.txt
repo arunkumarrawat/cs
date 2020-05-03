@@ -1,0 +1,345 @@
+* 2012-11-16
+TODO
+class SystemEnvClass
+{
+  Assembly repositoryAssembly;
+  public string Location
+  {
+    get{  return repositoryAssembly.Location;  }
+  }
+}
+
+* Lisp List
+LispNode start = new LispNode();
+
+LispNode currentNode = start;
+
+while((token = getNextToken())  != null) 
+  {
+    if(token.type = TokenType.LEFTPARENT) 
+      {
+        while((token1 = getNextToken()).type != TokenType.RightPARENT)
+          {
+            
+          }
+      }
+  }
+
+public class LispNode : IDispose
+{
+  LispNode next;
+  //to identify the LispNode type
+  /*
+   * 
+   */
+  LispNodeType type;
+  LispNode child;
+
+  public LispNode()
+    {
+      
+    }
+  
+};
+
+
+
+start = new LispNode();
+
+public class PacomContextMenu : contextmenu
+{
+  
+  
+}
+* Lisp in C# pseudocode
+///Code Start
+LinkedList p;
+p = mainChain;
+switch(token)
+{
+  case '(':
+    p1 = parseToken();
+    p.First = p1;
+    p = p1;
+  break;
+  
+}
+
+LinkedList parseToken()
+{
+  pstart = p;
+  while(1)
+    {
+      tempToken =  getNextToken();
+      type = Atom;
+      p1 =  new LinkedList(); 
+      if(tempToken is null||tempToken is ')')
+        {
+          break;
+        }
+      
+      if(tempToken.type == '(')  
+        {
+          tempToken = parseToken();
+          type =  List; 
+        }
+
+      p1.First = tempToken;
+      p1.Type = type;
+      p.Next = p1;
+      p = p1;
+      
+    }
+
+  return pstart;
+}
+///Code end
+
+* Design pattern-----Decorator pattern
+
+interface IComponent
+{
+  public string Operation();
+}
+
+public class Component : IComponent
+{
+  public string Operation()
+  {
+    
+  }
+}
+
+public class Decorator : IComponent
+{
+  IComponent component;
+  object addedState;
+  public string Operation()
+  {
+    
+  }
+
+  public void AddedBehavior()
+  {
+    
+  }
+}
+
+public class Client
+{
+  Component component;
+  Decorator decorator;
+}
+
+* Design Pattern---proxy pattern
+
+interface ISubject
+{
+  public string Request()
+}
+
+public class Subject
+{
+  public string Request()
+}
+
+public class Proxy : ISubject
+{
+  Subject s;
+  public string Request()
+  {
+    if(s == null)
+      s = new Subject();
+    return s.Request();
+  }
+}
+
+public class Client
+{
+  ISubject s;
+}
+
+* Design Pattern - Bridge pattern
+interface Bridge
+{
+  public string Operationlmp();
+}
+
+public class Abstraction
+{
+  Bridge bridge;
+
+  public Abstraction(Bridge implementation)
+  {
+    bridge =  implementation; 
+  }
+  
+  public string Operation()
+  {
+    
+  }
+}
+
+public ImplementationA : Bridge
+{
+  public string Operation()
+  {
+    
+  }
+}
+
+public ImplementationB: Bridge
+{
+  public string Operation()
+  {
+    
+  }
+}
+
+static void Main ()
+{
+  new Abstraction (new ImplementationA()).Operation();
+  new Abstraction (new ImplementationB()).Operation();
+}
+
+* composite pattern
+//composite pattern
+interface IComponent
+{
+  public string Operation();
+}
+
+public class Component : IComponent
+{
+  public string name;
+  public string Operation()  
+  {
+    
+  }
+
+  public IComponent Find(T)
+  {
+    if(T.name == this.name)
+      {
+        return this;
+      }
+    return null;
+  }
+}
+
+public class Composite : IComponent
+{
+  List<IComponent> list;
+  public string name;
+  public Composite()
+    {
+      list =  new List<IComponent>(); 
+    }
+  public void add(IComponent c)
+  {
+    list.add(c);
+  }
+
+  public IComponent Find(IComponent t)
+  {
+    //Find the Component in the List
+    foreach(IComponent m in list)
+      {
+        if(m.Find(t)  != null)
+          return t;
+      }
+  }
+  
+  public string Operation(IComponent t)
+  {
+    //Then get found object in the list
+    IComponent founder =  this.Find(t);
+    founder.Operation();
+  }
+}
+
+* flyweight pattern
+//flyweight pattern
+interface IFlyweight
+{
+  public string Operation();
+}
+
+public class Flyweight : IFlyweight
+{
+  string intrinsicState;
+  
+  public string Operation()
+  {
+    
+  }
+}
+
+public class FlyweightFactory
+{
+  Dictionary<string IFlyweight> flyweight =  new Dictionary<string,IFlyweight>();
+  public FlyweightFactory()
+  {
+    flyweight.Clear();
+  }
+
+  public IFlyweight this[string index]
+  {
+    get
+      {
+        if(!flyweights.ContainsKey(index))
+          flyweights[index] = new Flyweights();
+        return flyweight[index];
+      }
+  }
+  
+}
+
+* Facade Pattern
+namespace abc
+{
+  public class SubsystemA
+  {
+    
+  }
+
+  public class SubsystemB
+  {
+    
+  }
+
+  public class SubsystemC
+  {
+    
+  }
+
+  public class Facade
+  {
+    SubsystemA a;
+    SubsystemB b;
+    SubsystemB c;
+    public Facade()
+    {
+      a =  new SubsystemA();
+      b =  new SubsystemB();
+      c =  new SubsystemC(); 
+    }
+
+    public void Operation1()
+    {
+      a.DoOp();
+      b.DoOp();
+      c.DoOp();
+    }
+    
+  }
+}
+
+public class client
+{
+  abc.Facade facade =  new abc.Facade();
+  public void DoOp()
+  {
+    facade.Operation1();
+  }
+}

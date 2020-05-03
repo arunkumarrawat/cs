@@ -1,0 +1,337 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Assemblies.Ftp.FtpCommands.AlloCommandHandler" Collapsed="true">
+    <Position X="3" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>AlloCommandHandler.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Assemblies.Ftp.FtpCommands.AppendCommandHandler" Collapsed="true">
+    <Position X="7.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAgAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>AppendCommandHandler.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Assemblies.Ftp.FtpCommands.CwdCommandHandler" Collapsed="true">
+    <Position X="21" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>CwdCommandHandler.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Assemblies.Ftp.FtpCommands.DeleCommandHandler" Collapsed="true">
+    <Position X="27.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DeleCommandHandler.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Assemblies.Ftp.FtpCommands.FtpCommandHandler" Collapsed="true">
+    <Position X="28.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAAAAAIAAAAAAAAAiAABAAAAQECAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>FtpCommandHandler.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Assemblies.Ftp.FtpCommands.ListCommandHandler" Collapsed="true">
+    <Position X="50.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ListCommandHandler.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Assemblies.Ftp.FtpCommands.ListCommandHandlerBase" Collapsed="true">
+    <Position X="49" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAIAAAAAAAAAAEAAAAAAQAAAAAAAQAAAAAAAAA=</HashCode>
+      <FileName>ListCommandHandlerBase.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Assemblies.Ftp.FtpCommands.MakeDirectoryCommandHandler" Collapsed="true">
+    <Position X="9.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>MakeDirectoryCommandHandler.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Assemblies.Ftp.FtpCommands.MakeDirectoryCommandHandlerBase" Collapsed="true">
+    <Position X="10.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>MakeDirectoryCommandHandlerBase.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Assemblies.Ftp.FtpCommands.NlstCommandHandler" Collapsed="true">
+    <Position X="48" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>NlstCommandHandler.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Assemblies.Ftp.FtpCommands.NoopCommandHandler" Collapsed="true">
+    <Position X="30" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>NoopCommandHandler.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Assemblies.Ftp.FtpCommands.PasswordCommandHandler" Collapsed="true">
+    <Position X="34.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>PasswordCommandHandler.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Assemblies.Ftp.FtpCommands.PasvCommandHandler" Collapsed="true">
+    <Position X="43.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAgAAAIAQAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>PasvCommandHandler.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Assemblies.Ftp.FtpCommands.PortCommandHandler" Collapsed="true">
+    <Position X="52.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>PortCommandHandler.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Assemblies.Ftp.FtpCommands.PwdCommandHandler" Collapsed="true">
+    <Position X="14.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>PwdCommandHandler.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Assemblies.Ftp.FtpCommands.PwdCommandHandlerBase" Collapsed="true">
+    <Position X="15.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>PwdCommandHandlerBase.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Assemblies.Ftp.FtpCommands.QuitCommandHandler" Collapsed="true">
+    <Position X="23.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>QuitCommandHandler.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Assemblies.Ftp.FtpCommands.RemoveDirectoryCommandHandler" Collapsed="true">
+    <Position X="39" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>RemoveDirectoryCommandHandler.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Assemblies.Ftp.FtpCommands.RemoveDirectoryCommandHandlerBase" Collapsed="true">
+    <Position X="37.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>RemoveDirectoryCommandHandlerBase.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Assemblies.Ftp.FtpCommands.RenameCompleteCommandHandler" Collapsed="true">
+    <Position X="45.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>RenameCompleteCommandHandler.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Assemblies.Ftp.FtpCommands.RenameStartCommandHandler" Collapsed="true">
+    <Position X="54.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>RenameStartCommandHandler.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Assemblies.Ftp.FtpCommands.RetrCommandHandler" Collapsed="true">
+    <Position X="5.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>RetrCommandHandler.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Assemblies.Ftp.FtpCommands.SizeCommandHandler" Collapsed="true">
+    <Position X="18.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>SizeCommandHandler.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Assemblies.Ftp.FtpCommands.StoreCommandHandler" Collapsed="true">
+    <Position X="25.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAgAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>StoreCommandHandler.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Assemblies.Ftp.FtpCommands.TypeCommandHandler" Collapsed="true">
+    <Position X="32.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>TypeCommandHandler.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Assemblies.Ftp.FtpCommands.UserCommandHandler" Collapsed="true">
+    <Position X="41.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>UserCommandHandler.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Assemblies.Ftp.FtpCommands.XMkdCommandHandler" Collapsed="true">
+    <Position X="12" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>XMkdCommandHandler.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Assemblies.Ftp.FtpCommands.XPwdCommandHandler" Collapsed="true">
+    <Position X="16.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>XPwdCommandHandler.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Assemblies.Ftp.FtpCommands.XRmdCommandHandler" Collapsed="true">
+    <Position X="36.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>XRmdCommandHandler.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Assemblies.Ftp.FtpConnectionData" Collapsed="true">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACHAIEQAQABACAEAAAACAAAgAACAwAAQgEAIhAQAAA=</HashCode>
+      <FileName>FtpConnectionData.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Assemblies.Ftp.FtpConnectionObject" Collapsed="true">
+    <Position X="0.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAABACAgAAAAAABAAgAAAAAAAQAAAAAAA=</HashCode>
+      <FileName>FtpConnectionObject.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Assemblies.Ftp.FtpReplySocket" Collapsed="true">
+    <Position X="59" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAAAAAEAAAAAAFAAAAAAAAAAAAAQAAAAAACAAAA=</HashCode>
+      <FileName>FtpReplySocket.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Assemblies.Ftp.FtpServer" Collapsed="true">
+    <Position X="60.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAQAAAACAAABAAABgAAAQIgAAAAEQCIAAAAAgAAAA=</HashCode>
+      <FileName>FtpServer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Assemblies.Ftp.FtpSocketHandler" Collapsed="true">
+    <Position X="57.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAGAAAAgCAAABAAAAIAAAAAgAAAAEAAIAAAAAiAAAA=</HashCode>
+      <FileName>FtpSocketHandler.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Assemblies.Ftp.FtpServerMessageHandler" Collapsed="true">
+    <Position X="62.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAIAAAAAA=</HashCode>
+      <FileName>MessageHandler.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Assemblies.Ftp.UserDataItem" Collapsed="true">
+    <Position X="62.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAAAAAACAAAAAAAAAAAAAAAAAAAIACAAAAAAAAAAA=</HashCode>
+      <FileName>UserData.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Assemblies.Ftp.UserData" Collapsed="true">
+    <Position X="60.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAEIgKAAAAAAIABAAAAAAAAAgAAMAAAkAAAgAACAgAA=</HashCode>
+      <FileName>UserData.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Assemblies.Ftp.General.FileNameHelpers" Collapsed="true">
+    <Position X="57.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>General.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Assemblies.Ftp.General.TextHelpers" Collapsed="true">
+    <Position X="59" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAA=</HashCode>
+      <FileName>General.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Assemblies.Ftp.FileSystem.StandardFileInfoObject" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="59" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAIAACAAAAAAAAAQIAAAAAAAAAAAAAIAAA=</HashCode>
+      <FileName>StandardFileInfoObject.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Assemblies.Ftp.FileSystem.StandardFileObject" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="60.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAhAAAAAAAAAAAAAAGAAAA=</HashCode>
+      <FileName>StandardFileObject.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Assemblies.Ftp.FileSystem.StandardFileSystemClassFactory" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="62.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAA=</HashCode>
+      <FileName>StandardFileSystemClassFactory.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Assemblies.Ftp.FileSystem.StandardFileSystemObject" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="57.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAEAAIAAQAAABAAAAAAACAECBEAAAAAAAAgAAQA=</HashCode>
+      <FileName>StandardFileSystemObject.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Interface Name="Assemblies.Ftp.FileSystem.IFile" Collapsed="true">
+    <Position X="57.25" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAGAAAA=</HashCode>
+      <FileName>Interfaces.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Assemblies.Ftp.FileSystem.IFileInfo" Collapsed="true">
+    <Position X="59" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAIAACAAAAAAAAAQIAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Assemblies.Ftp.FileSystem.IFileSystem" Collapsed="true">
+    <Position X="60.75" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAEAAIAAQAAABAAAAAAAAAEAAEAAAAAAAAgAAQA=</HashCode>
+      <FileName>Interfaces.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Assemblies.Ftp.FileSystem.IFileSystemClassFactory" Collapsed="true">
+    <Position X="62.5" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Microsoft YaHei" Size="9" />
+</ClassDiagram>

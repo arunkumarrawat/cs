@@ -1,0 +1,20 @@
+﻿using System;
+using System.Windows.Forms;
+
+namespace CSMultiThreadedWebDownloader
+{
+    static class Program
+    {
+        /// <summary>
+        /// The main entry point for the application.
+        /// </summary>
+        [STAThread]
+        static void Main()
+        {
+            //@example: Microsoft http downloader
+            Application.EnableVisualStyles();
+            Application.SetCompatibleTextRenderingDefault(false);
+            Application.Run(new MainForm());
+        }
+    }
+}

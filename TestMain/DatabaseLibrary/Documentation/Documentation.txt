@@ -1,0 +1,31 @@
+﻿* Standard Security
+Data Source=myServerAddress;Initial Catalog=myDataBase;User Id=myUsername;Password=myPassword;
+
+Use serverName\instanceName as Data Source to connect to a specific SQL Server instance.
+
+Are you using SQL Server 2008 Express? Don't miss the server name syntax Servername\SQLEXPRESS where you substitute Servername with the name of the computer where the SQL Server Express installation resides.
+ 
+* Standard Security alternative syntax
+
+This connection string produce the same result as the previous one. The reason to include it is to point out that some connection string keywords have many equivalents.
+Server=myServerAddress;Database=myDataBase;User ID=myUsername;Password=myPassword;Trusted_Connection=False;
+ 
+* Trusted Connection
+Data Source=myServerAddress;Initial Catalog=myDataBase;Integrated Security=SSPI;
+ 
+Copy
+ 
+Trusted Connection alternative syntax
+
+This connection string produce the same result as the previous one. The reason to include it is to point out that some connection string keywords have many equivalents.
+Server=myServerAddress;Database=myDataBase;Trusted_Connection=True;
+ 
+* Connecting to an SQL Server instance
+
+The syntax of specifying the server instance in the value of the server key is the same for all connection strings for SQL Server.
+Server=myServerName\theInstanceName;Database=myDataBase;Trusted_Connection=True;
+ 
+* Trusted Connection from a CE device
+
+Often a Windows CE device is not authenticated and logged in to a domain. To use SSPI or trusted connection / authentication from a CE device, use this connection string.
+Data Source=myServerAddress;Initial Catalog=myDataBase;Integrated Security=SSPI;User ID=myDomain\myUsername;Password=myPassword;

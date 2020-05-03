@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestLists xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestList name="orderedTest" id="0d14a4d8-f1e8-461a-a35f-092ce8ab8e30" parentListId="8c43106b-9dc1-4907-a29f-aa66a61bf5b6">
+    <TestLinks>
+      <TestLink id="1b78c4ae-6118-4f10-8d31-def28313c472" name="MyOrderedTest" storage="lispparsertest\myorderedtest.orderedtest" type="Microsoft.VisualStudio.TestTools.TestTypes.Ordered.AutoSuite, Microsoft.VisualStudio.QualityTools.Tips.OrderedTest.ObjectModel,   PublicKeyToken=b03f5f7f11d50a3a" />
+    </TestLinks>
+  </TestList>
+  <TestList name="Lists of Tests" id="8c43106b-9dc1-4907-a29f-aa66a61bf5b6">
+    <RunConfiguration id="df66ff4e-2dbe-4fdc-b5ee-9948626d8ad4" name="Local" storage="local.testsettings" type="Microsoft.VisualStudio.TestTools.Common.TestRunConfiguration, Microsoft.VisualStudio.QualityTools.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  </TestList>
+  <TestList name="asdf" id="b788cf9a-dfe0-48dd-a697-71cd38b4d242" parentListId="8c43106b-9dc1-4907-a29f-aa66a61bf5b6">
+    <Description>asdf</Description>
+    <TestLinks>
+      <TestLink id="ac92eb0e-9208-b62b-b818-48438f9eb7e6" name="TestDirectoryInfo" storage="lispparsertest\bin\debug\lispparsertest.dll" type="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestElement, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.ObjectModel, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+      <TestLink id="0c360892-441c-abb0-8db2-ff96b9205869" name="TestNextToken" storage="lispparsertest\bin\debug\lispparsertest.dll" type="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestElement, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.ObjectModel, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+      <TestLink id="42420ced-1ebf-1a6e-25dd-4983a8b168fa" name="TestNextCTwo" storage="lispparsertest\bin\debug\lispparsertest.dll" type="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestElement, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.ObjectModel, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+      <TestLink id="645df483-c7da-f563-be68-dbb28de5467c" name="TestMethod1" storage="lispparsertest\bin\debug\lispparsertest.dll" type="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestElement, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.ObjectModel, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+      <TestLink id="470716e5-8272-c3d1-145a-8bd0d5fa8871" name="TestNextC" storage="lispparsertest\bin\debug\lispparsertest.dll" type="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestElement, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.ObjectModel, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    </TestLinks>
+  </TestList>
+</TestLists>

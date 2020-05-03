@@ -1,0 +1,4 @@
+﻿* Target 
+Search all txt and .doc/.docx files
+
+
