@@ -46,28 +46,28 @@ namespace CSFtp_CLI.ftp
         {
             AddCommand(new UserCommandHandler(this));
             AddCommand(new PasswordCommandHandler(this));
-            AddCommand(new FtpCommands.QuitCommandHandler(this));
-            AddCommand(new FtpCommands.CwdCommandHandler(this));
-            AddCommand(new FtpCommands.PortCommandHandler(this));
-            AddCommand(new FtpCommands.PasvCommandHandler(this));
-            AddCommand(new FtpCommands.ListCommandHandler(this));
+            AddCommand(new QuitCommandHandler(this));
+            AddCommand(new CwdCommandHandler(this));
+            AddCommand(new PortCommandHandler(this));
+            AddCommand(new PasvCommandHandler(this));
+            AddCommand(new ListCommandHandler(this));
             AddCommand(new NlstCommandHandler(this));
-            AddCommand(new FtpCommands.PwdCommandHandler(this));
-            AddCommand(new FtpCommands.XPwdCommandHandler(this));
-            AddCommand(new FtpCommands.TypeCommandHandler(this));
-            AddCommand(new FtpCommands.RetrCommandHandler(this));
-            AddCommand(new FtpCommands.NoopCommandHandler(this));
-            AddCommand(new FtpCommands.SizeCommandHandler(this));
-            AddCommand(new FtpCommands.DeleCommandHandler(this));
-            AddCommand(new FtpCommands.AlloCommandHandler(this));
-            AddCommand(new FtpCommands.StoreCommandHandler(this));
-            AddCommand(new FtpCommands.MakeDirectoryCommandHandler(this));
-            AddCommand(new FtpCommands.RemoveDirectoryCommandHandler(this));
-            AddCommand(new FtpCommands.AppendCommandHandler(this));
-            AddCommand(new FtpCommands.RenameStartCommandHandler(this));
-            AddCommand(new FtpCommands.RenameCompleteCommandHandler(this));
-            AddCommand(new FtpCommands.XMkdCommandHandler(this));
-            AddCommand(new FtpCommands.XRmdCommandHandler(this));
+            AddCommand(new PwdCommandHandler(this));
+            AddCommand(new XPwdCommandHandler(this));
+            AddCommand(new TypeCommandHandler(this));
+            AddCommand(new RetrCommandHandler(this));
+            AddCommand(new NoopCommandHandler(this));
+            AddCommand(new SizeCommandHandler(this));
+            AddCommand(new DeleCommandHandler(this));
+            AddCommand(new AlloCommandHandler(this));
+            AddCommand(new StoreCommandHandler(this));
+            AddCommand(new MakeDirectoryCommandHandler(this));
+            AddCommand(new RemoveDirectoryCommandHandler(this));
+            AddCommand(new AppendCommandHandler(this));
+            AddCommand(new RenameStartCommandHandler(this));
+            AddCommand(new RenameCompleteCommandHandler(this));
+            AddCommand(new XMkdCommandHandler(this));
+            AddCommand(new XRmdCommandHandler(this));
         }
 
         private void AddCommand(FtpCommandHandler handler)

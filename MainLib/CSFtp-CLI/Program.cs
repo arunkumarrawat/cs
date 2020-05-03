@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 using MainLib;
+using CSFtp_CLI.ftp;
 
 namespace CSFtp_CLI
 {
@@ -24,6 +25,14 @@ namespace CSFtp_CLI
                     Console.WriteLine(x);
             }
 
+            StandardFileSystemClassFactory fileFactory = new StandardFileSystemClassFactory();
+
+            FtpConnectionObject theCommands = new FtpConnectionObject(fileFactory, 0, null);
+
+            string strUser = "USER wudi\r";
+            byte[] byteData = System.Text.Encoding.ASCII.GetBytes(strUser);
+
+            theCommands.Process(byteData);
         }
     }
 }

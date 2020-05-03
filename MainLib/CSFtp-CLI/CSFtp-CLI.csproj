@@ -79,7 +79,13 @@
     <Compile Include="FtpCommandsBase\PwdCommandHandlerBase.cs" />
     <Compile Include="FtpCommandsBase\RemoveDirectoryCommandHandlerBase.cs" />
     <Compile Include="FtpCommands\SizeCommandHandler.cs" />
+    <Compile Include="ftp\LoadedClass.cs" />
     <Compile Include="ftp\SocketHelpers.cs" />
+    <Compile Include="ftp\StandardFileInfoObject.cs" />
+    <Compile Include="ftp\StandardFileObject.cs" />
+    <Compile Include="ftp\StandardFileSystemClassFactory.cs" />
+    <Compile Include="ftp\StandardFileSystemObject.cs" />
+    <Compile Include="ftp\UserData.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
