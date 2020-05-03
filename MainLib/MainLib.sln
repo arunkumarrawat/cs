@@ -44,6 +44,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSFtp-CLI", "CSFtp-CLI\CSFt
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Form", "Form", "{B9046190-09CA-4705-9E19-C80C74F4F360}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSMultiThreadedWebDownloaderCLI", "CSMultiThreadedWebDownloaderCLI\CSMultiThreadedWebDownloaderCLI.csproj", "{DCB9D465-6C81-4FFC-AB45-753683FA6D2D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -106,6 +108,10 @@ Global
 		{6D410080-9C43-4D66-AFD4-47AE135C2C0F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6D410080-9C43-4D66-AFD4-47AE135C2C0F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6D410080-9C43-4D66-AFD4-47AE135C2C0F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DCB9D465-6C81-4FFC-AB45-753683FA6D2D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DCB9D465-6C81-4FFC-AB45-753683FA6D2D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DCB9D465-6C81-4FFC-AB45-753683FA6D2D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DCB9D465-6C81-4FFC-AB45-753683FA6D2D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -117,6 +123,7 @@ Global
 		{544D1AD1-4F90-4113-AA8C-C1B1A8E9E5CB} = {E4BB6BF7-4433-4EF6-A7A6-F1E7767945F6}
 		{A594D774-3F8E-4001-AEA2-59A33C6C5DD3} = {875AC2B2-2C7C-45C0-B0E4-8BDE7F18FC8B}
 		{6D410080-9C43-4D66-AFD4-47AE135C2C0F} = {875AC2B2-2C7C-45C0-B0E4-8BDE7F18FC8B}
+		{DCB9D465-6C81-4FFC-AB45-753683FA6D2D} = {875AC2B2-2C7C-45C0-B0E4-8BDE7F18FC8B}
 	EndGlobalSection
 	GlobalSection(TestCaseManagementSettings) = postSolution
 		CategoryFile = MainLib.vsmdi
