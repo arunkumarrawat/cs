@@ -97,7 +97,6 @@
     </None>
     <None Include="Properties\app.manifest" />
     <AppDesigner Include="Properties\" />
-    <None Include="WpfBrowserApplication_TemporaryKey.pfx" />
   </ItemGroup>
   <PropertyGroup>
     <StartArguments />
