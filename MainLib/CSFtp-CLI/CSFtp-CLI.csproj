@@ -74,10 +74,10 @@
     <Compile Include="ftp\FtpReplySocket.cs" />
     <Compile Include="ftp\FtpServerMessageHandler.cs" />
     <Compile Include="ftp\interface.cs" />
-    <Compile Include="ftp\ListCommandHandlerBase.cs" />
-    <Compile Include="ftp\MakeDirectoryCommandHandlerBase.cs" />
-    <Compile Include="ftp\PwdCommandHandlerBase.cs" />
-    <Compile Include="ftp\RemoveDirectoryCommandHandlerBase.cs" />
+    <Compile Include="FtpCommandsBase\ListCommandHandlerBase.cs" />
+    <Compile Include="FtpCommandsBase\MakeDirectoryCommandHandlerBase.cs" />
+    <Compile Include="FtpCommandsBase\PwdCommandHandlerBase.cs" />
+    <Compile Include="FtpCommandsBase\RemoveDirectoryCommandHandlerBase.cs" />
     <Compile Include="FtpCommands\SizeCommandHandler.cs" />
     <Compile Include="ftp\SocketHelpers.cs" />
     <Compile Include="Program.cs" />

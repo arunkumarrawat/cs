@@ -1,11 +1,12 @@
-﻿using System;
+﻿using CSFtp_CLI.ftp;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CSFtp_CLI.ftp
+namespace CSFtp_CLI.FtpCommandsBase
 {
     abstract class ListCommandHandlerBase : FtpCommandHandler
     {
