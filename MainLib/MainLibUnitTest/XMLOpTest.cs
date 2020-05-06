@@ -79,7 +79,7 @@ namespace MainLibUnitTest
             //nmTime.UTCToLocalTimeTest();
 
 
-            NMDataTable dt = new NMDataTable();
+            DataTableHelper dt = new DataTableHelper();
             dt.DataRowComparingTest();
         }
     }

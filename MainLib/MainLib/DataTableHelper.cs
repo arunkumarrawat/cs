@@ -11,12 +11,12 @@ namespace MainLib
     /// <summary>
     /// DataTable 
     /// </summary>
-    public class NMDataTable
+    public class DataTableHelper
     {
         /// <summary>
         /// Constructor
         /// </summary>
-        public NMDataTable()
+        public DataTableHelper()
         {
         }
 

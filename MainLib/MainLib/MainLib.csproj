@@ -98,7 +98,7 @@
     <Compile Include="CXML.cs" />
     <Compile Include="FileHash.cs" />
     <Compile Include="Network\CPing.cs" />
-    <Compile Include="NMDataTable.cs" />
+    <Compile Include="DataTableHelper.cs" />
     <Compile Include="NMLog.cs" />
     <Compile Include="NMRegister.cs" />
     <Compile Include="NMSocket\HtmlHelper.cs" />
