@@ -25,14 +25,9 @@ namespace CSFtp_CLI
                     Console.WriteLine(x);
             }
 
-            StandardFileSystemClassFactory fileFactory = new StandardFileSystemClassFactory();
+            // FtpCommandsCLI.Enter();
 
-            FtpConnectionObject theCommands = new FtpConnectionObject(fileFactory, 0, null);
-
-            string strUser = "USER wudi\r";
-            byte[] byteData = System.Text.Encoding.ASCII.GetBytes(strUser);
-
-            theCommands.Process(byteData);
+            HashTableSerialization.Enter();
         }
     }
 }

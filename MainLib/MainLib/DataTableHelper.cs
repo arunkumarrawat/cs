@@ -37,6 +37,20 @@ namespace MainLib
         }
 
         /// <summary>
+        /// Load XML to DataTable
+        /// </summary>
+        /// <param name="xmlPath"></param>
+        /// <returns></returns>
+        public DataTable XMLToDataTable(string xmlPath)
+        {
+            DataTable dataTable = new DataTable();
+
+            dataTable.ReadXml(xmlPath);
+
+            return dataTable;
+        }
+
+        /// <summary>
         /// Add New Row and Convert DataTable to XML
         /// </summary>
         private void DataTableToXMLTest()

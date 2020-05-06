@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FtpCommandsCLI.cs" />
     <Compile Include="FtpCommands\AlloCommandHandler.cs" />
     <Compile Include="FtpCommands\AppendCommandHandler.cs" />
     <Compile Include="FtpCommands\CwdCommandHandler.cs" />
@@ -86,6 +87,7 @@
     <Compile Include="ftp\StandardFileSystemClassFactory.cs" />
     <Compile Include="ftp\StandardFileSystemObject.cs" />
     <Compile Include="ftp\UserData.cs" />
+    <Compile Include="HashTableSerialization.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
