@@ -25,9 +25,9 @@ namespace CSFtp_CLI
                     Console.WriteLine(x);
             }
 
-            // FtpCommandsCLI.Enter();
+            // HashTableSerialization.Enter();
 
-            HashTableSerialization.Enter();
+            FtpCommandsCLI.Enter();
         }
     }
 }

@@ -13,10 +13,20 @@ namespace CSFtp_CLI
         {
             UserData userData = UserData.Get();
 
+            userData.Load();
+
+            if(userData.HasUser("wudi"))
+            {
+                Console.WriteLine("wudi is existed");
+                Console.WriteLine(userData.GetUserPassword("wudi"));
+                Console.WriteLine(userData.GetUserStartingDirectory("wudi"));
+                return;
+            }
+
             userData.AddUser("wudi");
 
             userData.SetUserPassword("wudi", "123456");
-
+            userData.SetUserStartingDirectory("wudi", "C:\\test");
             userData.Save();
         }
     }
