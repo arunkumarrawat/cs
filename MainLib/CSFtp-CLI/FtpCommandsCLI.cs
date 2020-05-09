@@ -28,15 +28,22 @@ namespace CSFtp_CLI
             UserData.Get().Load();
 
             string strUser = "USER wudi\r";
-            byte[] byteData = System.Text.Encoding.ASCII.GetBytes(strUser);
-
-            theCommands.Process(byteData);
+            theCommands.Process(Encoding.ASCII.GetBytes(strUser));
 
             string strPassword = "PASS 123456\r";
+            theCommands.Process(Encoding.ASCII.GetBytes(strPassword));
 
-            byteData = System.Text.Encoding.ASCII.GetBytes(strPassword);
+            string strPwd = "PWD\r";
+            theCommands.Process(Encoding.ASCII.GetBytes(strPwd));
 
-            theCommands.Process(byteData);
+            string strPort = "PORT 127,0,0,1,20,199\r";
+            theCommands.Process(Encoding.ASCII.GetBytes(strPort));
+
+            string strList = "NLST \r";
+            theCommands.Process(Encoding.ASCII.GetBytes(strList));
+
+            /*string strGet = "GET 1.txt \r";
+            theCommands.Process(Encoding.ASCII.GetBytes(strGet));*/
         }
     }
 }
