@@ -11,7 +11,7 @@ namespace OfficeLib
     /// <summary>
     /// NMExcel
     /// </summary>
-    public class NMExcel
+    public class ExcelHelper
     {
         /// <summary>
         /// 
