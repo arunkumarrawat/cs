@@ -9,7 +9,7 @@ namespace MainLib
     /// <summary>
     /// String Helper
     /// </summary>
-    public class CString
+    public class StringHelper
     {
         #region Low and UP
         /// <summary>

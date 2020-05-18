@@ -5,7 +5,10 @@ using System.Text;
 
 namespace MainLib
 {
-    public static class NMLog
+    /// <summary>
+    /// Log Helper to log debugging information
+    /// </summary>
+    public static class LogHelper
     {
         /// <summary>
         /// Log all message

@@ -93,13 +93,13 @@
     <Compile Include="NMEnvironment.cs" />
     <Compile Include="NMEventHandler.cs" />
     <Compile Include="NMFile.cs" />
-    <Compile Include="CString.cs" />
+    <Compile Include="StringHelper.cs" />
     <Compile Include="CTypeCast.cs" />
     <Compile Include="CXML.cs" />
     <Compile Include="FileHash.cs" />
     <Compile Include="Network\CPing.cs" />
     <Compile Include="DataTableHelper.cs" />
-    <Compile Include="NMLog.cs" />
+    <Compile Include="LogHelper.cs" />
     <Compile Include="NMRegister.cs" />
     <Compile Include="NMSocket\HtmlHelper.cs" />
     <Compile Include="NMSocket\IpAddressHelper.cs" />
