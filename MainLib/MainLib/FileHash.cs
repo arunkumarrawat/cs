@@ -13,6 +13,20 @@ namespace MainLib
     public class FileHash
     {
         /// <summary>
+        /// string of md5
+        /// </summary>
+        /// <param name="input"></param>
+        /// <returns></returns>
+        public static string md5str(string input)
+        {
+            using(var md5 = MD5.Create())
+            {
+                byte[] result = md5.ComputeHash(Encoding.UTF8.GetBytes(input));
+                string hex = BitConverter.ToString(result).Replace("-", string.Empty);
+                return hex.ToLower();
+            }
+        }
+        /// <summary>
         /// file hash value for md5
         /// </summary>
         /// <param name="filename"></param>

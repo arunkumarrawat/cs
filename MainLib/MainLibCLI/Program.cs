@@ -11,7 +11,7 @@ namespace MainLibCLI
     {
         static void Main(string[] args)
         {
-            IEnumerableTest.TMain(args);
+            FileHashEntry.TMain(args);
         }
     }
 }
