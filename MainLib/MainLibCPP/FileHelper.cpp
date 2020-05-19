@@ -12,6 +12,10 @@ FileHelper::~FileHelper()
 }
 
 int FileHelper::Copy(char *input, char* output) {
+
+	// @todo: 1. show copy speed 
+	// 2. if output is folder, then split string and get original file name
+
 #pragma warning(disable:4996)
 	FILE *inFile, *outFile;
 	char rec[BUF_SIZE];
