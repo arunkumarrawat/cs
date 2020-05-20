@@ -15,3 +15,8 @@ string StringHelper::charToString(char *input) {
 	string s(input);
 	return s;
 }
+
+int StringHelper::size(string s) {
+	if (s.empty()) return 0;
+	return s.size();
+}

@@ -10,5 +10,6 @@ public:
 	~StringHelper();
 
 	string charToString(char *input);
+	int size(string s);
 };
 
