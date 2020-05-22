@@ -49,3 +49,25 @@ int FileHelper::Copy(char *input, char* output) {
 
 	return 0;
 }
+
+void FileHelper::info(string fileName)
+{
+
+	StringHelper helper;
+	WIN32_FILE_ATTRIBUTE_DATA fInfo;
+
+	GetFileAttributesEx(helper.stringToLPCWSTR(fileName), GetFileExInfoStandard, &fInfo);
+}
+
+int FileHelper::fileExists(string fileName)
+{
+	WIN32_FIND_DATA FindFileData;
+	StringHelper helper;
+	HANDLE handle = FindFirstFile(helper.stringToLPCWSTR(fileName), &FindFileData);
+	int found = handle != INVALID_HANDLE_VALUE;
+	if (found)
+	{
+		FindClose(handle);
+	}
+	return found;
+}
