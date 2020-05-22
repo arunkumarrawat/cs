@@ -1,6 +1,9 @@
 #include <stdio.h>
 #include <string>
 #include <windows.h>
+#include <sstream>
+#include <iomanip>
+
 #include "StringHelper.h"
 using namespace std;
 #define BUF_SIZE 256
@@ -12,6 +15,7 @@ public:
 	~FileHelper();
 	int Copy(char *input, char* output);
 	void info(string fileName);
-	int fileExists(string fileName);
+	bool fileExists(string fileName);
+	string fileTimeToString(FILETIME time);
 };
 

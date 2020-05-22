@@ -13,6 +13,9 @@ namespace MainLibUnitTest
     [TestClass]
     public class LinqTest
     {
+        /// <summary>
+        /// 
+        /// </summary>
         public LinqTest()
         {
             //

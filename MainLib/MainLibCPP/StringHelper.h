@@ -4,6 +4,10 @@
 #include <string>
 #include <vector>
 #include <Windows.h>
+#include "atlbase.h"
+#include "atlstr.h"
+#include "comutil.h"
+
 using namespace std;
 class StringHelper
 {
@@ -14,7 +18,6 @@ public:
 	string charToString(char *input);
 	int size(string s);
 	vector<string> splitString(string s, char c);
-	wstring s2ws(const string &s);
-	LPCWSTR stringToLPCWSTR(string &s);
+	LPCWSTR s2ws(string s);
 };
 
