@@ -59,7 +59,7 @@ void FileHelper::info(string fileName)
 		return;
 	}
 	GetFileAttributesEx(helper.s2ws(fileName), GetFileExInfoStandard, &fInfo);
-	bool isDirectory = fInfo.dwFileAttributes & FILE_ATTRIBUTE_DIRECTORY;
+	bool isDirectory = (fInfo.dwFileAttributes & FILE_ATTRIBUTE_DIRECTORY) == 0 ? false: true;
 	if (isDirectory) {
 		cout << "is file: false" << endl;
 	}
