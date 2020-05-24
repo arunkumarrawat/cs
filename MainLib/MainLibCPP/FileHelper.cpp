@@ -50,6 +50,46 @@ int FileHelper::Copy(char *input, char* output) {
 	return 0;
 }
 
+int FileHelper::CopyW(string input, string output)
+{
+#define BUF_SIZE 256
+
+	StringHelper helper;
+
+	HANDLE hIn, hOut;
+	DWORD nIn, nOut;
+	CHAR buffer[BUF_SIZE];
+
+	hIn = CreateFile(helper.s2ws(input), GENERIC_READ, FILE_SHARE_READ, NULL,
+		OPEN_EXISTING, FILE_ATTRIBUTE_NORMAL, NULL);
+
+	if (hIn == INVALID_HANDLE_VALUE) {
+		cout << "Can not open input file. Error: " << GetLastError() << endl;
+		return 2;
+	}
+
+	hOut = CreateFile(helper.s2ws(output), GENERIC_WRITE, 0, NULL,
+		CREATE_ALWAYS, FILE_ATTRIBUTE_NORMAL, NULL);
+	if (hIn == INVALID_HANDLE_VALUE) {
+		cout << "Can not open output file. Error: " << GetLastError() << endl;
+		return 2;
+	}
+
+	while (ReadFile(hIn, buffer, BUF_SIZE, &nIn, NULL) && nIn > 0) {
+		WriteFile(hOut, buffer, nIn, &nOut, NULL);
+
+		if (nIn != nOut) {
+			cout << "Fatal Write Error" << GetLastError() << endl;
+			return 4;
+		}
+	}
+
+	CloseHandle(hIn);
+	CloseHandle(hOut);
+
+	return 0;
+}
+
 void FileHelper::info(string fileName)
 {
 	StringHelper helper;

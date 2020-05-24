@@ -56,6 +56,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MainLibCPPCLI", "MainLibCPP
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "cfile", "cfile\cfile.vcxproj", "{9179F820-1F35-40CC-BE57-1B0BB573E70A}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "cpw", "cpw\cpw.vcxproj", "{2F7B3B4F-B5F7-42A9-B0CA-147B5FD679B4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -289,6 +291,16 @@ Global
 		{9179F820-1F35-40CC-BE57-1B0BB573E70A}.Release|x64.Build.0 = Release|x64
 		{9179F820-1F35-40CC-BE57-1B0BB573E70A}.Release|x86.ActiveCfg = Release|Win32
 		{9179F820-1F35-40CC-BE57-1B0BB573E70A}.Release|x86.Build.0 = Release|Win32
+		{2F7B3B4F-B5F7-42A9-B0CA-147B5FD679B4}.Debug|Any CPU.ActiveCfg = Debug|Win32
+		{2F7B3B4F-B5F7-42A9-B0CA-147B5FD679B4}.Debug|x64.ActiveCfg = Debug|x64
+		{2F7B3B4F-B5F7-42A9-B0CA-147B5FD679B4}.Debug|x64.Build.0 = Debug|x64
+		{2F7B3B4F-B5F7-42A9-B0CA-147B5FD679B4}.Debug|x86.ActiveCfg = Debug|Win32
+		{2F7B3B4F-B5F7-42A9-B0CA-147B5FD679B4}.Debug|x86.Build.0 = Debug|Win32
+		{2F7B3B4F-B5F7-42A9-B0CA-147B5FD679B4}.Release|Any CPU.ActiveCfg = Release|Win32
+		{2F7B3B4F-B5F7-42A9-B0CA-147B5FD679B4}.Release|x64.ActiveCfg = Release|x64
+		{2F7B3B4F-B5F7-42A9-B0CA-147B5FD679B4}.Release|x64.Build.0 = Release|x64
+		{2F7B3B4F-B5F7-42A9-B0CA-147B5FD679B4}.Release|x86.ActiveCfg = Release|Win32
+		{2F7B3B4F-B5F7-42A9-B0CA-147B5FD679B4}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -303,6 +315,7 @@ Global
 		{DCB9D465-6C81-4FFC-AB45-753683FA6D2D} = {875AC2B2-2C7C-45C0-B0E4-8BDE7F18FC8B}
 		{0D4C471C-BFE5-43D7-9905-A98573DC0AD7} = {ABCFE10E-6FE9-4154-B3E7-16C69346D7E6}
 		{9179F820-1F35-40CC-BE57-1B0BB573E70A} = {ABCFE10E-6FE9-4154-B3E7-16C69346D7E6}
+		{2F7B3B4F-B5F7-42A9-B0CA-147B5FD679B4} = {ABCFE10E-6FE9-4154-B3E7-16C69346D7E6}
 	EndGlobalSection
 	GlobalSection(TestCaseManagementSettings) = postSolution
 		CategoryFile = MainLib.vsmdi
