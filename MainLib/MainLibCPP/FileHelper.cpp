@@ -52,8 +52,6 @@ int FileHelper::Copy(char *input, char* output) {
 
 int FileHelper::CopyW(string input, string output)
 {
-#define BUF_SIZE 256
-
 	StringHelper helper;
 
 	HANDLE hIn, hOut;
@@ -87,6 +85,31 @@ int FileHelper::CopyW(string input, string output)
 	CloseHandle(hIn);
 	CloseHandle(hOut);
 
+	return 0;
+}
+
+int FileHelper::CatW(string input)
+{
+	HANDLE hInFile, hStdIn = GetStdHandle(STD_INPUT_HANDLE);
+	HANDLE hStdOut = GetStdHandle(STD_OUTPUT_HANDLE);
+
+	StringHelper helper;
+	hInFile = CreateFile(helper.s2ws(input), GENERIC_READ, FILE_SHARE_READ, NULL,
+		OPEN_EXISTING, FILE_ATTRIBUTE_NORMAL, NULL);
+
+	DWORD nIn, nOut;
+	BYTE buffer[BUF_SIZE];
+	while (ReadFile(hInFile, buffer, BUF_SIZE, &nIn, NULL) && nIn > 0) {
+		WriteFile(hStdOut, buffer, nIn, &nOut, NULL);
+
+		if (nIn != nOut) {
+			cout << "Fatal Write Error" << GetLastError() << endl;
+			return 4;
+		}
+	}
+	CloseHandle(hInFile);
+	CloseHandle(hStdIn);
+	CloseHandle(hStdOut);
 	return 0;
 }
 

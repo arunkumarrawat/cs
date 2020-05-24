@@ -15,6 +15,7 @@ public:
 	~FileHelper();
 	int Copy(char *input, char* output);
 	int CopyW(string input, string output);
+	int CatW(string input);
 	void info(string fileName);
 	bool fileExists(string fileName);
 	string fileTimeToString(FILETIME time);
