@@ -25,17 +25,32 @@ vector<string> StringHelper::splitString(string s, char c)
 {
 	vector<string> output;
 
+	char *array = new char[s.size()];
+
 
 	int start = 0;
 
+	int counter = 0;
 	for (int i = 0; i < s.size(); i++) {
 		if (s[i] != c) {
+			array[counter++] = s[i];
 			continue;
 		}
 		else {
-			int* temp = new int[i - start];
+			array[counter] = '\0';
+			output.push_back(array);
+			memset(array, 0, s.size() * sizeof(char));
+			counter = 0;
 		}
 	}
+
+	if (counter > 0) {
+		array[counter] = '\0';
+		output.push_back(array);
+		memset(array, 0, s.size() * sizeof(char));
+		counter = 0;
+	}
+
 	return output;
 }
 

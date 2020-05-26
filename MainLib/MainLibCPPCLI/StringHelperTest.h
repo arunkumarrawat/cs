@@ -1,5 +1,6 @@
 #pragma once
 #include "StringHelper.h"
+#include <vector>
 using namespace std;
 class StringHelperTest
 {

@@ -16,4 +16,10 @@ void StringHelperTest::Entry() {
 	StringHelper helper;
 	string output = helper.charToString(input);
 	cout << output << endl;
+
+	vector<string> v = helper.splitString(input, ' ');
+
+	for (string s : v) {
+		cout << s << endl;
+	}
 }
