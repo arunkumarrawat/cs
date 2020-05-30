@@ -131,6 +131,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ArrayHelper.h" />
+    <ClInclude Include="ConsoleHelper.h" />
     <ClInclude Include="FileHelper.h" />
     <ClInclude Include="HashMapHelper.h" />
     <ClInclude Include="stdafx.h" />
@@ -139,6 +140,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="ArrayHelper.cpp" />
+    <ClCompile Include="ConsoleHelper.cpp" />
     <ClCompile Include="FileHelper.cpp" />
     <ClCompile Include="HashMapHelper.cpp" />
     <ClCompile Include="stdafx.cpp">

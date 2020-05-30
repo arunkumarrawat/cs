@@ -88,6 +88,18 @@ int FileHelper::CopyW(string input, string output)
 	return 0;
 }
 
+int FileHelper::PWD()
+{
+#define DIRNAME_LEN (MAX_PATH + 2)
+
+	TCHAR pwdBuffer[DIRNAME_LEN];
+	DWORD lenCurDir;
+
+	lenCurDir = GetCurrentDirectory(DIRNAME_LEN, pwdBuffer);
+
+	return 0;
+}
+
 int FileHelper::CatW(string input)
 {
 	HANDLE hInFile, hStdIn = GetStdHandle(STD_INPUT_HANDLE);
