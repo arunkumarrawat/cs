@@ -15,5 +15,7 @@ public:
 	BOOL PrintMsg(LPCTSTR pMsg);
 	void print(string s);
 	void printLine(string s);
+
+	void ReportError(LPCTSTR userMessage, DWORD exitCode, BOOL printErrorMessage);
 };
 
