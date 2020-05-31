@@ -50,3 +50,14 @@ void ConsoleHelper::print(string s)
 		cout << "Fatal Write Error" << GetLastError() << endl;
 	}
 }
+
+void ConsoleHelper::printLine(string s)
+{
+	StringHelper stringHelper;
+	
+	BOOL result = PrintMsg(stringHelper.s2ws(s.append("\r\n")));
+
+	if (result) {
+		cout << "Fatal Write Error" << GetLastError() << endl;
+	}
+}

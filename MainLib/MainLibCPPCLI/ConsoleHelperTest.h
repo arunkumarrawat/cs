@@ -1,4 +1,4 @@
-#pragma once
+#include "ConsoleHelper.h"
 class ConsoleHelperTest
 {
 public:

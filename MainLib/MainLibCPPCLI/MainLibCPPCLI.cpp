@@ -3,11 +3,11 @@
 
 #include "stdafx.h"
 #include "StringHelperTest.h"
-
+#include "ConsoleHelperTest.h"
 
 int main()
 {
-	StringHelperTest helper;
+	ConsoleHelperTest helper;
 
 	helper.Entry();
 

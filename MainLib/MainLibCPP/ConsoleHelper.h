@@ -14,5 +14,6 @@ public:
 	BOOL PrintStrings(HANDLE hOut, ...);
 	BOOL PrintMsg(LPCTSTR pMsg);
 	void print(string s);
+	void printLine(string s);
 };
 
