@@ -4,10 +4,11 @@
 #include "stdafx.h"
 #include "StringHelperTest.h"
 #include "ConsoleHelperTest.h"
+#include "HashMapHelperTest.h"
 
 int main()
 {
-	ConsoleHelperTest helper;
+	HashMapHelperTest helper;
 
 	helper.Entry();
 
