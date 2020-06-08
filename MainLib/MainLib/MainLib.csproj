@@ -76,6 +76,7 @@
     <Compile Include="Algorithm\NMSimpleCache.cs" />
     <Compile Include="Algorithm\NMSort.cs" />
     <Compile Include="CConsole.cs" />
+    <Compile Include="RandomHelper.cs" />
     <Compile Include="SqlServerDatabase.cs" />
     <Compile Include="CEnum.cs" />
     <Compile Include="CFtp.cs" />
