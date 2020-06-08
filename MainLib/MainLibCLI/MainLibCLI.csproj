@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ArrayHelperTest.cs" />
     <Compile Include="CEnumTest.cs" />
     <Compile Include="FileHashEntry.cs" />
     <Compile Include="IEnumerableTest.cs" />

@@ -11,7 +11,7 @@ namespace MainLibCLI
     {
         static void Main(string[] args)
         {
-            RandomHelperTest.TMain(args);
+            ArrayHelperTest.TMain(args);
         }
     }
 }
