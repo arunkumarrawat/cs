@@ -5,10 +5,11 @@
 #include "StringHelperTest.h"
 #include "ConsoleHelperTest.h"
 #include "HashMapHelperTest.h"
+#include "DateTimeHelperTest.h"
 
 int main()
 {
-	HashMapHelperTest helper;
+	DateTimeHelperTest helper;
 
 	helper.Entry();
 

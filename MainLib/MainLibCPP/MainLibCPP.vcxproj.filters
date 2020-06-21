@@ -39,6 +39,12 @@
     <ClInclude Include="ConsoleHelper.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="ProcessHelper.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DateTimeHelper.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
@@ -57,6 +63,12 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="ConsoleHelper.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ProcessHelper.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DateTimeHelper.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
