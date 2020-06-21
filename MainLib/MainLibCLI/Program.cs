@@ -11,7 +11,7 @@ namespace MainLibCLI
     {
         static void Main(string[] args)
         {
-            FileHashEntry.TMain(args);
+            ArrayHelperTest.TMain(args);
         }
     }
 }
