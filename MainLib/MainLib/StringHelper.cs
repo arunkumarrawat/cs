@@ -115,5 +115,16 @@ namespace MainLib
         {
             return Encoding.ASCII.GetBytes(s);
         }
+
+        /// <summary>
+        /// Convert a byte array to a string of hex characters.
+        /// </summary>
+        /// <param name="value">The byte array to convert.</param>
+        /// <returns>The converted string.</returns>
+        protected static string ToHexString(byte[] value)
+        {
+            string hexString = BitConverter.ToString(value, 0);
+            return hexString.Replace("-", "");
+        }
     }
 }
