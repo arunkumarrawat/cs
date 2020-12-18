@@ -66,6 +66,9 @@ namespace MainLib
             }
         }
 
+        /// <summary>
+        /// Example to Invoke Context
+        /// </summary>
         public void ContextMenuTest()
         {
             ContextMenu("Open with notepad", "notepad.exe %1");

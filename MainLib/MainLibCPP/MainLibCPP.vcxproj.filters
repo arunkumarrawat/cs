@@ -45,6 +45,9 @@
     <ClInclude Include="DateTimeHelper.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="SystemHelper.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
@@ -69,6 +72,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="DateTimeHelper.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SystemHelper.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
