@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3290203E-50AF-4F90-8D13-A0524ABB54D4}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Leetcode</RootNamespace>
+    <AssemblyName>Leetcode</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddStrings_415.cs" />
+    <Compile Include="AssignCookies_455.cs" />
+    <Compile Include="BinaryTreeLevelOrderTraversal_102.cs" />
+    <Compile Include="ConvertNumberToHex_405.cs" />
+    <Compile Include="CountBinarySubstrings696.cs" />
+    <Compile Include="CountingBits_338.cs" />
+    <Compile Include="CountPrimes_204.cs" />
+    <Compile Include="FindAllNumbersDisappeared_448.cs" />
+    <Compile Include="FindDifference_389.cs" />
+    <Compile Include="FizzBuzz_412.cs" />
+    <Compile Include="HammingDistance_461.cs" />
+    <Compile Include="InsertInterval_57.cs" />
+    <Compile Include="IslandPerimeter_463.cs" />
+    <Compile Include="IsPresent.cs" />
+    <Compile Include="LonelyInteger.cs" />
+    <Compile Include="LongestPalindrome_409.cs" />
+    <Compile Include="LRUCache.cs" />
+    <Compile Include="MaxPointsOnaLine.cs" />
+    <Compile Include="MinimumDepthOfBinaryTree_111.cs" />
+    <Compile Include="MinimumMovestoEqualArrayElementsII_462.cs" />
+    <Compile Include="MinimumMovestoEqualArrayElements_453.cs" />
+    <Compile Include="MultiplyString_43.cs" />
+    <Compile Include="MySqrt_69.cs" />
+    <Compile Include="OnesAndZeroes.cs" />
+    <Compile Include="PathSumII_113.cs" />
+    <Compile Include="PIApproximate.cs" />
+    <Compile Include="PowerOfFour_342.cs" />
+    <Compile Include="PrintStar.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PushRecursion.cs" />
+    <Compile Include="RansomNote_383.cs" />
+    <Compile Include="ReorderList_143.cs" />
+    <Compile Include="ReverseString_344.cs" />
+    <Compile Include="SqrtApproximate.cs" />
+    <Compile Include="SumofLeftLeaves_404.cs" />
+    <Compile Include="Sum_Exam.cs" />
+    <Compile Include="SymmetricTree_101.cs" />
+    <Compile Include="TotalHammingDistance_477.cs" />
+    <Compile Include="TrapRainWater_42.cs" />
+    <Compile Include="TrieTree_208.cs" />
+    <Compile Include="UTF-8Validation_393.cs" />
+    <Compile Include="ValidateIPAddress_468.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
