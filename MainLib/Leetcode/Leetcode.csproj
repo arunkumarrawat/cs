@@ -61,6 +61,7 @@
     <Compile Include="LongestPalindrome_409.cs" />
     <Compile Include="LRUCache.cs" />
     <Compile Include="Maximum69Number_1323.cs" />
+    <Compile Include="MaximumNumberofBalloons_1189.cs" />
     <Compile Include="MaxPointsOnaLine.cs" />
     <Compile Include="MinimumDepthOfBinaryTree_111.cs" />
     <Compile Include="MinimumMovestoEqualArrayElementsII_462.cs" />
