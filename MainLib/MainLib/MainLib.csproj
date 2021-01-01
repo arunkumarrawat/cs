@@ -73,7 +73,6 @@
     <Compile Include="Algorithm\Heapsort.cs" />
     <Compile Include="Algorithm\LinkTreeLeftToRight.cs" />
     <Compile Include="Algorithm\LRUAlgorithm.cs" />
-    <Compile Include="Algorithm\NMSimpleCache.cs" />
     <Compile Include="Algorithm\NMSort.cs" />
     <Compile Include="ArrayHelper.cs" />
     <Compile Include="CConsole.cs" />

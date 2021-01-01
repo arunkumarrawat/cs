@@ -50,6 +50,7 @@
     <Compile Include="CountBinarySubstrings696.cs" />
     <Compile Include="CountingBits_338.cs" />
     <Compile Include="CountPrimes_204.cs" />
+    <Compile Include="DesignanOrderedStream_1656.cs" />
     <Compile Include="FindAllNumbersDisappeared_448.cs" />
     <Compile Include="FindDifference_389.cs" />
     <Compile Include="FizzBuzz_412.cs" />
