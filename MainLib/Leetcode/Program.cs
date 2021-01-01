@@ -16,7 +16,7 @@ namespace Leetcode
 
             //ReorderList_143 r = new ReorderList_143();
             //r.main();
-            Maximum69Number_1323.main();
+            UniqueMorseCodeWords_804.main();
 
         }
     }
