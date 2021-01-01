@@ -65,6 +65,7 @@
     <Compile Include="MaximumNumberofBalloons_1189.cs" />
     <Compile Include="MaxPointsOnaLine.cs" />
     <Compile Include="MinimumDepthOfBinaryTree_111.cs" />
+    <Compile Include="MinimumIndexSumofTwoLists_599.cs" />
     <Compile Include="MinimumMovestoEqualArrayElementsII_462.cs" />
     <Compile Include="MinimumMovestoEqualArrayElements_453.cs" />
     <Compile Include="MultiplyString_43.cs" />
