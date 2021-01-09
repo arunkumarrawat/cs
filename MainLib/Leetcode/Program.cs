@@ -16,7 +16,7 @@ namespace Leetcode
 
             //ReorderList_143 r = new ReorderList_143();
             //r.main();
-            MinimumIndexSumofTwoLists_599.main();
+            SquaresofaSortedArray_977.main();
 
         }
     }
