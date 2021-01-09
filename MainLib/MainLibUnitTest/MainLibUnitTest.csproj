@@ -64,6 +64,7 @@
     <Compile Include="LinqTest.cs" />
     <Compile Include="JsonHelperTest.cs" />
     <Compile Include="AlgorithmTest.cs" />
+    <Compile Include="MainAlgorithmLibTest.cs" />
     <Compile Include="XMLOpTest.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -74,6 +74,7 @@
     <Compile Include="Algorithm\LinkTreeLeftToRight.cs" />
     <Compile Include="Algorithm\LRUAlgorithm.cs" />
     <Compile Include="Algorithm\NMSort.cs" />
+    <Compile Include="Algorithm\PriorityQueue.cs" />
     <Compile Include="ArrayHelper.cs" />
     <Compile Include="CConsole.cs" />
     <Compile Include="RandomHelper.cs" />
