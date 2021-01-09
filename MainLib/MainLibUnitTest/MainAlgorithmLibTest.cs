@@ -31,6 +31,8 @@ namespace MainLibUnitTest
 
             Assert.AreEqual(pqMax.Peek(), 20);
 
+            pqMax.Dequeue();
+            Assert.AreEqual(pqMax.Peek(), 10);
         }
     }
 }
