@@ -68,8 +68,6 @@ namespace MainLibUnitTest
             // TODO: Add test logic here
             //
 
-            NMRegister register = new NMRegister();
-            register.MapCapsLockToControlWindows8();
         }
 
 

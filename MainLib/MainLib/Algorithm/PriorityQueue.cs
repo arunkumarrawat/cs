@@ -12,12 +12,23 @@ namespace MainLib.Algorithm
     public class PriorityQueue<T> where T : IComparable<T>
     {
         private List<T> data;
+        private bool isMaxHeap = false; 
         /// <summary>
         /// 
         /// </summary>
         public PriorityQueue()
         {
             this.data = new List<T>();
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="isMaxHeap"></param>
+        public PriorityQueue(bool isMaxHeap)
+        {
+            this.data = new List<T>();
+            this.isMaxHeap = isMaxHeap;
         }
 
         /// <summary>
@@ -31,7 +42,11 @@ namespace MainLib.Algorithm
             while (ci > 0)
             {
                 int pi = (ci - 1) / 2; // parent index
-                if (data[ci].CompareTo(data[pi]) >= 0) break; // child item is larger than (or equal) parent so we're done
+                if(isMaxHeap)
+                {
+                    if (data[ci].CompareTo(data[pi]) <= 0) break;
+                } else if (data[ci].CompareTo(data[pi]) >= 0)
+                    break; // child item is larger than (or equal) parent so we're done
                 T tmp = data[ci]; data[ci] = data[pi]; data[pi] = tmp;
                 ci = pi;
             }
@@ -55,9 +70,20 @@ namespace MainLib.Algorithm
                 int ci = pi * 2 + 1; // left child index of parent
                 if (ci > li) break;  // no children so done
                 int rc = ci + 1;     // right child
-                if (rc <= li && data[rc].CompareTo(data[ci]) < 0) // if there is a rc (ci + 1), and it is smaller than left child, use the rc instead
-                    ci = rc;
-                if (data[pi].CompareTo(data[ci]) <= 0) break; // parent is smaller than (or equal to) smallest child so done
+                if (isMaxHeap)
+                {
+                    if (rc <= li && data[rc].CompareTo(data[ci]) >= 0) // if there is a rc (ci + 1), and it is smaller than left child, use the rc instead
+                        ci = rc;
+                    if (data[pi].CompareTo(data[ci]) >= 0) break; // parent is smaller than (or equal to) smallest child so done
+                }
+                else
+                {
+
+                    if (rc <= li && data[rc].CompareTo(data[ci]) < 0) // if there is a rc (ci + 1), and it is smaller than left child, use the rc instead
+                        ci = rc;
+                    if (data[pi].CompareTo(data[ci]) <= 0) break; // parent is smaller than (or equal to) smallest child so done
+                }
+
                 T tmp = data[pi]; data[pi] = data[ci]; data[ci] = tmp; // swap parent and child
                 pi = ci;
             }

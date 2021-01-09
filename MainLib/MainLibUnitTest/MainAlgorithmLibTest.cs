@@ -21,6 +21,16 @@ namespace MainLibUnitTest
             }
 
             Assert.AreEqual(pq.Peek(), 3);
+
+            PriorityQueue<int> pqMax = new PriorityQueue<int>(true);
+
+            foreach (int x in a)
+            {
+                pqMax.Enqueue(x);
+            }
+
+            Assert.AreEqual(pqMax.Peek(), 20);
+
         }
     }
 }

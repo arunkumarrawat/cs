@@ -58,7 +58,6 @@
     <Compile Include="CPingTest.cs" />
     <Compile Include="NMSocketUnitTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="NMRegisterTest.cs" />
     <Compile Include="NMFileTest.cs" />
     <Compile Include="ReflectionUtilTest.cs" />
     <Compile Include="LinqTest.cs" />
