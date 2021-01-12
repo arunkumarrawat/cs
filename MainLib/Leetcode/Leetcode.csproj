@@ -46,6 +46,7 @@
     <Compile Include="AddStrings_415.cs" />
     <Compile Include="AssignCookies_455.cs" />
     <Compile Include="BinaryTreeLevelOrderTraversal_102.cs" />
+    <Compile Include="CalculateMoneyinLeetcodeBank_1716.cs" />
     <Compile Include="ConvertNumberToHex_405.cs" />
     <Compile Include="CountBinarySubstrings696.cs" />
     <Compile Include="CountingBits_338.cs" />
