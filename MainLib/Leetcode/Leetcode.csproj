@@ -87,6 +87,7 @@
     <Compile Include="SumofLeftLeaves_404.cs" />
     <Compile Include="Sum_Exam.cs" />
     <Compile Include="SymmetricTree_101.cs" />
+    <Compile Include="ToeplitzMatrix_766.cs" />
     <Compile Include="TotalHammingDistance_477.cs" />
     <Compile Include="TrapRainWater_42.cs" />
     <Compile Include="TrieTree_208.cs" />
