@@ -82,6 +82,7 @@
     <Compile Include="RansomNote_383.cs" />
     <Compile Include="ReorderList_143.cs" />
     <Compile Include="ReverseString_344.cs" />
+    <Compile Include="SortArrayByParityII_922.cs" />
     <Compile Include="SqrtApproximate.cs" />
     <Compile Include="SquaresofaSortedArray_977.cs" />
     <Compile Include="SubdomainVisitCount_811.cs" />
