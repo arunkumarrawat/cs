@@ -59,6 +59,7 @@
     <Compile Include="InsertInterval_57.cs" />
     <Compile Include="IslandPerimeter_463.cs" />
     <Compile Include="IsPresent.cs" />
+    <Compile Include="LargestPerimeterTriangle_976.cs" />
     <Compile Include="LonelyInteger.cs" />
     <Compile Include="LongestPalindrome_409.cs" />
     <Compile Include="LRUCache.cs" />
