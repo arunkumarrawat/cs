@@ -84,6 +84,7 @@
     <Compile Include="ReverseString_344.cs" />
     <Compile Include="SqrtApproximate.cs" />
     <Compile Include="SquaresofaSortedArray_977.cs" />
+    <Compile Include="SubdomainVisitCount_811.cs" />
     <Compile Include="SumofLeftLeaves_404.cs" />
     <Compile Include="Sum_Exam.cs" />
     <Compile Include="SymmetricTree_101.cs" />
