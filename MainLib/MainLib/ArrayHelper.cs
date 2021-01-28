@@ -47,5 +47,25 @@ namespace MainLib
 
             return aNewArray;
         }
+
+        /// <summary>
+        /// convert int[,] to int[][]
+        /// </summary>
+        /// <param name="p"></param>
+        /// <returns></returns>
+        public int[][] convert(int[,] p)
+        {
+            int[][] result = new int[p.GetLength(0)][];
+            for (int i = 0; i < p.GetLength(0); i++)
+            {
+                int t = p.GetLength(1);
+                result[i] = new int[t];
+                for (int j = 0; j < t; j++)
+                {
+                    result[i][j] = p[i, j];
+                }
+            }
+            return result;
+        }
     }
 }
