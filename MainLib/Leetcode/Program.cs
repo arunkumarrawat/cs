@@ -16,7 +16,7 @@ namespace Leetcode
 
             //ReorderList_143 r = new ReorderList_143();
             //r.main();
-            LargestTriangleArea_812.main();
+            MinimumRemovetoMakeValidParentheses.main();
 
         }
     }
