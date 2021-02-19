@@ -71,6 +71,7 @@
     <Compile Include="MinimumIndexSumofTwoLists_599.cs" />
     <Compile Include="MinimumMovestoEqualArrayElementsII_462.cs" />
     <Compile Include="MinimumMovestoEqualArrayElements_453.cs" />
+    <Compile Include="MinimumRemovetoMakeValidParentheses.cs" />
     <Compile Include="MultiplyString_43.cs" />
     <Compile Include="MySqrt_69.cs" />
     <Compile Include="OnesAndZeroes.cs" />
@@ -101,6 +102,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MainLib\MainLib.csproj">
+      <Project>{8816af68-0f31-4e03-afb8-6ba46a49e61f}</Project>
+      <Name>MainLib</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

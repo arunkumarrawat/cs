@@ -75,6 +75,8 @@
     <Compile Include="Algorithm\LRUAlgorithm.cs" />
     <Compile Include="Algorithm\NMSort.cs" />
     <Compile Include="Algorithm\PriorityQueue.cs" />
+    <Compile Include="Algorithm\Tree.cs" />
+    <Compile Include="Algorithm\TreeNode.cs" />
     <Compile Include="ArrayHelper.cs" />
     <Compile Include="CConsole.cs" />
     <Compile Include="RandomHelper.cs" />
