@@ -78,6 +78,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TotalCommander", "TotalComm
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FtpClient", "FtpClient\FtpClient.csproj", "{FAEE635E-E2CC-479C-A43E-7049492919FD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StartProgramManage", "StartProgramManage\StartProgramManage.csproj", "{E603C6F5-F4B3-446F-B393-BC9ECFD91AB7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -416,6 +418,18 @@ Global
 		{FAEE635E-E2CC-479C-A43E-7049492919FD}.Release|x64.Build.0 = Release|Any CPU
 		{FAEE635E-E2CC-479C-A43E-7049492919FD}.Release|x86.ActiveCfg = Release|Any CPU
 		{FAEE635E-E2CC-479C-A43E-7049492919FD}.Release|x86.Build.0 = Release|Any CPU
+		{E603C6F5-F4B3-446F-B393-BC9ECFD91AB7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E603C6F5-F4B3-446F-B393-BC9ECFD91AB7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E603C6F5-F4B3-446F-B393-BC9ECFD91AB7}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{E603C6F5-F4B3-446F-B393-BC9ECFD91AB7}.Debug|x64.Build.0 = Debug|Any CPU
+		{E603C6F5-F4B3-446F-B393-BC9ECFD91AB7}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{E603C6F5-F4B3-446F-B393-BC9ECFD91AB7}.Debug|x86.Build.0 = Debug|Any CPU
+		{E603C6F5-F4B3-446F-B393-BC9ECFD91AB7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E603C6F5-F4B3-446F-B393-BC9ECFD91AB7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E603C6F5-F4B3-446F-B393-BC9ECFD91AB7}.Release|x64.ActiveCfg = Release|Any CPU
+		{E603C6F5-F4B3-446F-B393-BC9ECFD91AB7}.Release|x64.Build.0 = Release|Any CPU
+		{E603C6F5-F4B3-446F-B393-BC9ECFD91AB7}.Release|x86.ActiveCfg = Release|Any CPU
+		{E603C6F5-F4B3-446F-B393-BC9ECFD91AB7}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -439,6 +453,7 @@ Global
 		{01475990-55FB-479B-9E65-6C35F778EDA0} = {875AC2B2-2C7C-45C0-B0E4-8BDE7F18FC8B}
 		{E39A1DF2-7EC0-49F8-BADB-28DD0B3B262C} = {B9046190-09CA-4705-9E19-C80C74F4F360}
 		{FAEE635E-E2CC-479C-A43E-7049492919FD} = {B9046190-09CA-4705-9E19-C80C74F4F360}
+		{E603C6F5-F4B3-446F-B393-BC9ECFD91AB7} = {B9046190-09CA-4705-9E19-C80C74F4F360}
 	EndGlobalSection
 	GlobalSection(TestCaseManagementSettings) = postSolution
 		CategoryFile = MainLib.vsmdi
