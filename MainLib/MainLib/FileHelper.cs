@@ -41,6 +41,21 @@ namespace MainLib
         }
 
         /// <summary>
+        /// converting file into memory string
+        /// </summary>
+        /// <param name="path"></param>
+        /// <returns></returns>
+        public string fileToString(string path)
+        {
+            if(File.Exists(path))
+            {
+                StreamReader sr = new StreamReader(path);
+                return sr.ReadToEnd();
+            }
+            return "";
+        }
+
+        /// <summary>
         /// 
         /// </summary>
         /// <returns></returns>

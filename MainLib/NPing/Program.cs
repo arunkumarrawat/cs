@@ -12,11 +12,6 @@ namespace NPing
     {
         static void Main(string[] args)
         {
-            string configvalue1 = ConfigurationManager.AppSettings["countoffiles"];
-            string configvalue2 = ConfigurationManager.AppSettings["logfilelocation"];
-
-            Console.WriteLine(configvalue1);
-            Console.WriteLine(configvalue2);
 
             if(args.Length < 1)
             {

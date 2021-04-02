@@ -4,13 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DBCLI
+namespace System.Web.Mvc
 {
-    class Program
+    public class ViewPage
     {
-        static void Main(string[] args)
-        {
-
-        }
     }
 }
