@@ -21,5 +21,10 @@ namespace TotalCommander
         {
 
         }
+
+        private void path_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

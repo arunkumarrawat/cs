@@ -59,6 +59,15 @@ namespace Microsoft.Web.Mvc.Controls
             set { _truncateText = value; }
         }
 
+        /// <summary>
+        /// open public interface
+        /// </summary>
+        /// <param name="writer"></param>
+        public void PublicRender(HtmlTextWriter writer)
+        {
+            this.Render(writer);
+        }
+
         protected override void Render(HtmlTextWriter writer)
         {
             if (!DesignMode && String.IsNullOrEmpty(Name))
