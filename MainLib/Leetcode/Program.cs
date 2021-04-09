@@ -16,7 +16,7 @@ namespace Leetcode
 
             //ReorderList_143 r = new ReorderList_143();
             //r.main();
-            AverageSalaryExcludingtheMinimumandMaximumSalary_1491.main();
+            PathCrossing_1496.main();
 
         }
     }

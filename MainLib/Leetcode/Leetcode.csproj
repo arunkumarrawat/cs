@@ -76,6 +76,7 @@
     <Compile Include="MultiplyString_43.cs" />
     <Compile Include="MySqrt_69.cs" />
     <Compile Include="OnesAndZeroes.cs" />
+    <Compile Include="PathCrossing_1496.cs" />
     <Compile Include="PathSumII_113.cs" />
     <Compile Include="PIApproximate.cs" />
     <Compile Include="PowerOfFour_342.cs" />
