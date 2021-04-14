@@ -98,6 +98,7 @@
     <Compile Include="TotalHammingDistance_477.cs" />
     <Compile Include="TrapRainWater_42.cs" />
     <Compile Include="TrieTree_208.cs" />
+    <Compile Include="TruncateSentence_1816.cs" />
     <Compile Include="UniqueMorseCodeWords_804.cs" />
     <Compile Include="UTF-8Validation_393.cs" />
     <Compile Include="ValidateIPAddress_468.cs" />
