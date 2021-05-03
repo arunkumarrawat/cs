@@ -79,6 +79,7 @@
     <Compile Include="Algorithm\TreeNode.cs" />
     <Compile Include="ArrayHelper.cs" />
     <Compile Include="CConsole.cs" />
+    <Compile Include="EnvHelper.cs" />
     <Compile Include="RandomHelper.cs" />
     <Compile Include="SqlServerDatabase.cs" />
     <Compile Include="CEnum.cs" />

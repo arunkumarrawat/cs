@@ -19,10 +19,10 @@ namespace TotalCommander
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            
         }
 
-        private void path_TextChanged(object sender, EventArgs e)
+        private void pathA_TextChanged(object sender, EventArgs e)
         {
 
         }
