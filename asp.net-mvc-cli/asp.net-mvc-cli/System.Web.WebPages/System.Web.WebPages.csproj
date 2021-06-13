@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{88FF4934-5BCB-4FF7-9DB6-64EBE0176A47}</ProjectGuid>
+    <ProjectGuid>{A3902AD4-31C0-48EE-B249-A69232A7A7C9}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>System.Web.Mvc</RootNamespace>
-    <AssemblyName>System.Web.Mvc</AssemblyName>
+    <RootNamespace>System.Web.WebPages</RootNamespace>
+    <AssemblyName>System.Web.WebPages</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
@@ -42,18 +42,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ControllerBase.cs" />
-    <Compile Include="ControllerContext.cs" />
-    <Compile Include="TempDataDictionary.cs" />
-    <Compile Include="ViewContext.cs" />
-    <Compile Include="ViewPage.cs" />
+    <Compile Include="BrowserHelpers.cs" />
+    <Compile Include="BrowserOverride.cs" />
+    <Compile Include="BrowserOverrideStore.cs" />
+    <Compile Include="BrowserOverrideStores.cs" />
+    <Compile Include="DefaultDisplayMode.cs" />
+    <Compile Include="DisplayInfo.cs" />
+    <Compile Include="DisplayModeProvider.cs" />
+    <Compile Include="IDisplayMode.cs" />
+    <Compile Include="ITemplateFile.cs" />
+    <Compile Include="IVirtualPathFactory.cs" />
+    <Compile Include="IVirtualPathUtility.cs" />
+    <Compile Include="IWebPageRequestExecutor.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\System.Web.WebPages\System.Web.WebPages.csproj">
-      <Project>{a3902ad4-31c0-48ee-b249-a69232a7a7c9}</Project>
-      <Name>System.Web.WebPages</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

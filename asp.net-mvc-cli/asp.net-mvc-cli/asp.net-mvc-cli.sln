@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Microsoft.Web.Mvc", "Micros
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "System.Web.Mvc", "System.Web.Mvc\System.Web.Mvc.csproj", "{88FF4934-5BCB-4FF7-9DB6-64EBE0176A47}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "System.Web.WebPages", "System.Web.WebPages\System.Web.WebPages.csproj", "{A3902AD4-31C0-48EE-B249-A69232A7A7C9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{88FF4934-5BCB-4FF7-9DB6-64EBE0176A47}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{88FF4934-5BCB-4FF7-9DB6-64EBE0176A47}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{88FF4934-5BCB-4FF7-9DB6-64EBE0176A47}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A3902AD4-31C0-48EE-B249-A69232A7A7C9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A3902AD4-31C0-48EE-B249-A69232A7A7C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A3902AD4-31C0-48EE-B249-A69232A7A7C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A3902AD4-31C0-48EE-B249-A69232A7A7C9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
