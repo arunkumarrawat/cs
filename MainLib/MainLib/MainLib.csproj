@@ -78,6 +78,7 @@
     <Compile Include="Algorithm\Tree.cs" />
     <Compile Include="Algorithm\TreeNode.cs" />
     <Compile Include="ArrayHelper.cs" />
+    <Compile Include="Base64Helper.cs" />
     <Compile Include="CConsole.cs" />
     <Compile Include="EnvHelper.cs" />
     <Compile Include="RandomHelper.cs" />

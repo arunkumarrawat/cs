@@ -11,7 +11,7 @@ namespace MainLibCLI
     {
         static void Main(string[] args)
         {
-            ArrayHelperTest.TMain(args);
+            Base64HelperTest.TMain(args);
         }
     }
 }
