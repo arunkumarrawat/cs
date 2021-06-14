@@ -63,6 +63,9 @@ namespace MainLibUnitTest
         //
         #endregion
 
+        /// <summary>
+        /// JoinTest
+        /// </summary>
         [TestMethod]
         public void JoinTest()
         {
@@ -70,6 +73,9 @@ namespace MainLibUnitTest
             join.GetCustomerTest();
         }
 
+        /// <summary>
+        /// JoinLinq102
+        /// </summary>
         [TestMethod]
         public void JoinLinq102()
         {
@@ -77,6 +83,9 @@ namespace MainLibUnitTest
             join.Linq102();
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
         [TestMethod]
         public void JoinLinq103()
         {
@@ -84,7 +93,9 @@ namespace MainLibUnitTest
             join.Linq103();
         }
 
-
+        /// <summary>
+        /// JoinLinq104
+        /// </summary>
         [TestMethod]
         public void JoinLinq104()
         {
@@ -92,7 +103,9 @@ namespace MainLibUnitTest
             join.Linq104();
         }
 
-
+        /// <summary>
+        /// JoinLinq105
+        /// </summary>
         [TestMethod]
         public void JoinLinq105()
         {
@@ -100,6 +113,9 @@ namespace MainLibUnitTest
             join.Linq105();
         }
 
+        /// <summary>
+        /// JoinLinq106
+        /// </summary>
         [TestMethod]
         public void JoinLinq106()
         {
@@ -107,6 +123,9 @@ namespace MainLibUnitTest
             join.Linq106();
         }
 
+        /// <summary>
+        /// JoinLinq107
+        /// </summary>
         [TestMethod]
         public void JoinLinq107()
         {
@@ -114,6 +133,9 @@ namespace MainLibUnitTest
             join.Linq107();
         }
 
+        /// <summary>
+        /// NumberOperation
+        /// </summary>
         [TestMethod]
         public void NumberOperation()
         {
