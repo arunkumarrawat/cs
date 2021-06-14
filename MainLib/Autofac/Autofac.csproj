@@ -48,6 +48,7 @@
     <Compile Include="Builder\StartableManager.cs" />
     <Compile Include="Class1.cs" />
     <Compile Include="ContainerBuilder.cs" />
+    <Compile Include="ContainerBuilderResources.Designer.cs" />
     <Compile Include="Core\Container.cs" />
     <Compile Include="Core\DependencyResolutionException.cs" />
     <Compile Include="Core\IActivatedEventArgs.cs" />
@@ -73,6 +74,21 @@
     <Compile Include="Core\Lifetime\MatchingScopeLifetimeTags.cs" />
     <Compile Include="Core\Lifetime\RootScopeLifetime.cs" />
     <Compile Include="Core\Parameter.cs" />
+    <Compile Include="Core\Resolving\ActivatorExtensions.cs" />
+    <Compile Include="Core\Resolving\CircularDependencyDetector.cs" />
+    <Compile Include="Core\Resolving\CircularDependencyDetectorResources.Designer.cs" />
+    <Compile Include="Core\Resolving\ComponentActivationResources.Designer.cs" />
+    <Compile Include="Core\Resolving\IInstanceLookup.cs" />
+    <Compile Include="Core\Resolving\InstanceLookup.cs" />
+    <Compile Include="Core\Resolving\InstanceLookupBeginningEventArgs.cs" />
+    <Compile Include="Core\Resolving\InstanceLookupCompletionBeginningEventArgs.cs" />
+    <Compile Include="Core\Resolving\InstanceLookupCompletionEndingEventArgs.cs" />
+    <Compile Include="Core\Resolving\InstanceLookupEndingEventArgs.cs" />
+    <Compile Include="Core\Resolving\IResolveOperation.cs" />
+    <Compile Include="Core\Resolving\ResolveOperation.cs" />
+    <Compile Include="Core\Resolving\ResolveOperationBeginningEventArgs.cs" />
+    <Compile Include="Core\Resolving\ResolveOperationEndingEventArgs.cs" />
+    <Compile Include="Core\Resolving\ResolveOperationResources.Designer.cs" />
     <Compile Include="Core\Service.cs" />
     <Compile Include="Core\ServiceResources.Designer.cs" />
     <Compile Include="Features\Collections\CollectionRegistrationSource.cs" />
@@ -83,6 +99,8 @@
     <Compile Include="Features\GeneratedFactories\GeneratedFactoryRegistrationSource.cs" />
     <Compile Include="Features\GeneratedFactories\GeneratedFactoryRegistrationSourceResources.Designer.cs" />
     <Compile Include="Features\GeneratedFactories\ParameterMapping.cs" />
+    <Compile Include="Features\Indexed\IIndex.cs" />
+    <Compile Include="Features\Indexed\KeyedServiceIndex.cs" />
     <Compile Include="Features\LazyDependencies\LazyRegistrationSource.cs" />
     <Compile Include="Features\LazyDependencies\LazyRegistrationSourceResources.Designer.cs" />
     <Compile Include="Features\LazyDependencies\LazyWithMetadataRegistrationSource.cs" />
@@ -101,7 +119,18 @@
     <Compile Include="IContainer.cs" />
     <Compile Include="ILifetimeScope.cs" />
     <Compile Include="IStartable.cs" />
+    <Compile Include="ModuleRegistrationExtensions.cs" />
+    <Compile Include="ModuleResources.Designer.cs" />
+    <Compile Include="NamedParameter.cs" />
+    <Compile Include="ParameterExtensions.cs" />
+    <Compile Include="PositionalParameter.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PropertyWiringOptions.cs" />
+    <Compile Include="RegistrationExtensions.cs" />
+    <Compile Include="RegistrationExtensionsResources.Designer.cs" />
+    <Compile Include="ResolutionExtensions.cs" />
+    <Compile Include="ScanningFilterExtensions.cs" />
+    <Compile Include="SourceRegistrationExtensions.cs" />
     <Compile Include="Util\AssemblyExtensions.cs" />
     <Compile Include="Util\Disposable.cs" />
     <Compile Include="Util\Enforce.cs" />
@@ -119,8 +148,12 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
+    <EmbeddedResource Include="ContainerBuilderResources.resx" />
     <EmbeddedResource Include="Core\Lifetime\LifetimeScopeResources.resx" />
     <EmbeddedResource Include="Core\Lifetime\MatchingScopeLifetimeResources.resx" />
+    <EmbeddedResource Include="Core\Resolving\CircularDependencyDetectorResources.resx" />
+    <EmbeddedResource Include="Core\Resolving\ComponentActivationResources.resx" />
+    <EmbeddedResource Include="Core\Resolving\ResolveOperationResources.resx" />
     <EmbeddedResource Include="Core\ServiceResources.resx" />
     <EmbeddedResource Include="Features\Collections\CollectionRegistrationSourceResources.resx" />
     <EmbeddedResource Include="Features\GeneratedFactories\GeneratedFactoryRegistrationSourceResources.resx" />
@@ -129,6 +162,8 @@
     <EmbeddedResource Include="Features\Metadata\MetadataViewProviderResources.resx" />
     <EmbeddedResource Include="Features\Metadata\MetaRegistrationSourceResources.resx" />
     <EmbeddedResource Include="Features\OwnedInstances\OwnedInstanceRegistrationSourceResources.resx" />
+    <EmbeddedResource Include="ModuleResources.resx" />
+    <EmbeddedResource Include="RegistrationExtensionsResources.resx" />
     <EmbeddedResource Include="Util\EnforceResources.resx" />
     <EmbeddedResource Include="Util\FallbackDictionaryResources.resx" />
     <EmbeddedResource Include="Util\ReflectionExtensionsResources.resx" />
