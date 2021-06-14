@@ -9,8 +9,9 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Autofac</RootNamespace>
     <AssemblyName>Autofac</AssemblyName>
-    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -44,6 +45,7 @@
     <Compile Include="Builder\DeferredCallback.cs" />
     <Compile Include="Builder\MetadataConfiguration.cs" />
     <Compile Include="Builder\MetadataKeys.cs" />
+    <Compile Include="Builder\StartableManager.cs" />
     <Compile Include="Class1.cs" />
     <Compile Include="ContainerBuilder.cs" />
     <Compile Include="Core\Container.cs" />
@@ -79,6 +81,13 @@
     <Compile Include="Features\LazyDependencies\LazyRegistrationSourceResources.Designer.cs" />
     <Compile Include="Features\LazyDependencies\LazyWithMetadataRegistrationSource.cs" />
     <Compile Include="Features\LazyDependencies\LazyWithMetadataRegistrationSourceResources.Designer.cs" />
+    <Compile Include="Features\Metadata\MetadataViewProvider.cs" />
+    <Compile Include="Features\Metadata\MetadataViewProviderResources.Designer.cs" />
+    <Compile Include="Features\Metadata\MetaRegistrationSource.cs" />
+    <Compile Include="Features\Metadata\MetaRegistrationSourceResources.Designer.cs" />
+    <Compile Include="Features\Metadata\Meta{T,TMetadata}.cs" />
+    <Compile Include="Features\Metadata\Meta{T}.cs" />
+    <Compile Include="Features\Metadata\StronglyTypedMetaRegistrationSource.cs" />
     <Compile Include="IComponentContext.cs" />
     <Compile Include="IContainer.cs" />
     <Compile Include="ILifetimeScope.cs" />
@@ -107,6 +116,8 @@
     <EmbeddedResource Include="Features\Collections\CollectionRegistrationSourceResources.resx" />
     <EmbeddedResource Include="Features\LazyDependencies\LazyRegistrationSourceResources.resx" />
     <EmbeddedResource Include="Features\LazyDependencies\LazyWithMetadataRegistrationSourceResources.resx" />
+    <EmbeddedResource Include="Features\Metadata\MetadataViewProviderResources.resx" />
+    <EmbeddedResource Include="Features\Metadata\MetaRegistrationSourceResources.resx" />
     <EmbeddedResource Include="Util\EnforceResources.resx" />
     <EmbeddedResource Include="Util\FallbackDictionaryResources.resx" />
     <EmbeddedResource Include="Util\ReflectionExtensionsResources.resx" />
