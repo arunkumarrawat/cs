@@ -77,6 +77,12 @@
     <Compile Include="Core\ServiceResources.Designer.cs" />
     <Compile Include="Features\Collections\CollectionRegistrationSource.cs" />
     <Compile Include="Features\Collections\CollectionRegistrationSourceResources.Designer.cs" />
+    <Compile Include="Features\GeneratedFactories\FactoryGenerator.cs" />
+    <Compile Include="Features\GeneratedFactories\GeneratedFactoryActivatorData.cs" />
+    <Compile Include="Features\GeneratedFactories\GeneratedFactoryRegistrationExtensions.cs" />
+    <Compile Include="Features\GeneratedFactories\GeneratedFactoryRegistrationSource.cs" />
+    <Compile Include="Features\GeneratedFactories\GeneratedFactoryRegistrationSourceResources.Designer.cs" />
+    <Compile Include="Features\GeneratedFactories\ParameterMapping.cs" />
     <Compile Include="Features\LazyDependencies\LazyRegistrationSource.cs" />
     <Compile Include="Features\LazyDependencies\LazyRegistrationSourceResources.Designer.cs" />
     <Compile Include="Features\LazyDependencies\LazyWithMetadataRegistrationSource.cs" />
@@ -88,6 +94,9 @@
     <Compile Include="Features\Metadata\Meta{T,TMetadata}.cs" />
     <Compile Include="Features\Metadata\Meta{T}.cs" />
     <Compile Include="Features\Metadata\StronglyTypedMetaRegistrationSource.cs" />
+    <Compile Include="Features\OwnedInstances\Owned.cs" />
+    <Compile Include="Features\OwnedInstances\OwnedInstanceRegistrationSource.cs" />
+    <Compile Include="Features\OwnedInstances\OwnedInstanceRegistrationSourceResources.Designer.cs" />
     <Compile Include="IComponentContext.cs" />
     <Compile Include="IContainer.cs" />
     <Compile Include="ILifetimeScope.cs" />
@@ -114,10 +123,12 @@
     <EmbeddedResource Include="Core\Lifetime\MatchingScopeLifetimeResources.resx" />
     <EmbeddedResource Include="Core\ServiceResources.resx" />
     <EmbeddedResource Include="Features\Collections\CollectionRegistrationSourceResources.resx" />
+    <EmbeddedResource Include="Features\GeneratedFactories\GeneratedFactoryRegistrationSourceResources.resx" />
     <EmbeddedResource Include="Features\LazyDependencies\LazyRegistrationSourceResources.resx" />
     <EmbeddedResource Include="Features\LazyDependencies\LazyWithMetadataRegistrationSourceResources.resx" />
     <EmbeddedResource Include="Features\Metadata\MetadataViewProviderResources.resx" />
     <EmbeddedResource Include="Features\Metadata\MetaRegistrationSourceResources.resx" />
+    <EmbeddedResource Include="Features\OwnedInstances\OwnedInstanceRegistrationSourceResources.resx" />
     <EmbeddedResource Include="Util\EnforceResources.resx" />
     <EmbeddedResource Include="Util\FallbackDictionaryResources.resx" />
     <EmbeddedResource Include="Util\ReflectionExtensionsResources.resx" />
