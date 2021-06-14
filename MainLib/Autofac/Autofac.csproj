@@ -41,8 +41,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Activators\Delegate\DelegateActivator.cs" />
-    <Compile Include="Activators\Delegate\DelegateActivatorResources.Designer.cs" />
+    <Compile Include="Builder\ConcreteReflectionActivatorData.cs" />
+    <Compile Include="Builder\DynamicRegistrationStyle.cs" />
+    <Compile Include="Builder\IConcreteActivatorData.cs" />
+    <Compile Include="Builder\IHideObjectMembers.cs" />
+    <Compile Include="Builder\ReflectionActivatorData.cs" />
+    <Compile Include="Builder\RegistrationData.cs" />
+    <Compile Include="Core\Activators\DefaultPropertySelector.cs" />
+    <Compile Include="Core\Activators\DelegatePropertySelector.cs" />
+    <Compile Include="Core\Activators\Delegate\DelegateActivator.cs" />
+    <Compile Include="Core\Activators\Delegate\DelegateActivatorResources.Designer.cs" />
+    <Compile Include="Core\Activators\InstanceActivator.cs" />
+    <Compile Include="Core\Activators\InstanceActivatorResources.Designer.cs" />
+    <Compile Include="Core\Activators\IPropertySelector.cs" />
     <Compile Include="Builder\ContainerBuildOptions.cs" />
     <Compile Include="Builder\DeferredCallback.cs" />
     <Compile Include="Builder\IRegistrationBuilder.cs" />
@@ -53,12 +64,32 @@
     <Compile Include="Builder\RegistrationBuilder{TLimit,TActivatorData,TRegistrationStyle}.cs" />
     <Compile Include="Builder\RegistrationExtensions.cs" />
     <Compile Include="Builder\RegistrationOrderExtensions.cs" />
+    <Compile Include="Builder\SimpleActivatorData.cs" />
+    <Compile Include="Builder\SingleRegistrationStyle.cs" />
     <Compile Include="Builder\StartableManager.cs" />
     <Compile Include="Class1.cs" />
     <Compile Include="ContainerBuilder.cs" />
     <Compile Include="ContainerBuilderResources.Designer.cs" />
     <Compile Include="Core\ActivatedEventArgs.cs" />
     <Compile Include="Core\ActivatingEventArgs.cs" />
+    <Compile Include="Core\Activators\ProvidedInstance\ProvidedInstanceActivator.cs" />
+    <Compile Include="Core\Activators\ProvidedInstance\ProvidedInstanceActivatorResources.Designer.cs" />
+    <Compile Include="Core\Activators\Reflection\AutowiringParameter.cs" />
+    <Compile Include="Core\Activators\Reflection\AutowiringPropertyInjector.cs" />
+    <Compile Include="Core\Activators\Reflection\ConstructorParameterBinding.cs" />
+    <Compile Include="Core\Activators\Reflection\ConstructorParameterBindingResources.Designer.cs" />
+    <Compile Include="Core\Activators\Reflection\DefaultConstructorFinder.cs" />
+    <Compile Include="Core\Activators\Reflection\DefaultValueParameter.cs" />
+    <Compile Include="Core\Activators\Reflection\IConstructorFinder.cs" />
+    <Compile Include="Core\Activators\Reflection\IConstructorSelector.cs" />
+    <Compile Include="Core\Activators\Reflection\MatchingSignatureConstructorSelector.cs" />
+    <Compile Include="Core\Activators\Reflection\MatchingSignatureConstructorSelectorResources.Designer.cs" />
+    <Compile Include="Core\Activators\Reflection\MostParametersConstructorSelector.cs" />
+    <Compile Include="Core\Activators\Reflection\MostParametersConstructorSelectorResources.Designer.cs" />
+    <Compile Include="Core\Activators\Reflection\NoConstructorsFoundException.cs" />
+    <Compile Include="Core\Activators\Reflection\NoConstructorsFoundExceptionResources.Designer.cs" />
+    <Compile Include="Core\Activators\Reflection\ReflectionActivator.cs" />
+    <Compile Include="Core\Activators\Reflection\ReflectionActivatorResources.Designer.cs" />
     <Compile Include="Core\AutoActivateService.cs" />
     <Compile Include="Core\ComponentRegisteredEventArgs.cs" />
     <Compile Include="Core\ConstantParameter.cs" />
@@ -79,6 +110,7 @@
     <Compile Include="Core\IRegistrationSource.cs" />
     <Compile Include="Core\IServiceWithType.cs" />
     <Compile Include="Core\ISharingLifetimeScope.cs" />
+    <Compile Include="Core\KeyedService.cs" />
     <Compile Include="Core\Lifetime\CurrentScopeLifetime.cs" />
     <Compile Include="Core\Lifetime\LifetimeScope.cs" />
     <Compile Include="Core\Lifetime\LifetimeScopeBeginningEventArgs.cs" />
@@ -193,9 +225,16 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
-    <EmbeddedResource Include="Activators\Delegate\DelegateActivatorResources.resx" />
+    <EmbeddedResource Include="Core\Activators\Delegate\DelegateActivatorResources.resx" />
+    <EmbeddedResource Include="Core\Activators\InstanceActivatorResources.resx" />
     <EmbeddedResource Include="Builder\RegistrationBuilderResources.resx" />
     <EmbeddedResource Include="ContainerBuilderResources.resx" />
+    <EmbeddedResource Include="Core\Activators\ProvidedInstance\ProvidedInstanceActivatorResources.resx" />
+    <EmbeddedResource Include="Core\Activators\Reflection\ConstructorParameterBindingResources.resx" />
+    <EmbeddedResource Include="Core\Activators\Reflection\MatchingSignatureConstructorSelectorResources.resx" />
+    <EmbeddedResource Include="Core\Activators\Reflection\MostParametersConstructorSelectorResources.resx" />
+    <EmbeddedResource Include="Core\Activators\Reflection\NoConstructorsFoundExceptionResources.resx" />
+    <EmbeddedResource Include="Core\Activators\Reflection\ReflectionActivatorResources.resx" />
     <EmbeddedResource Include="Core\ContainerResources.resx" />
     <EmbeddedResource Include="Core\Lifetime\LifetimeScopeResources.resx" />
     <EmbeddedResource Include="Core\Lifetime\MatchingScopeLifetimeResources.resx" />
