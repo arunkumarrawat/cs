@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.31205.134
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MainLib", "MainLib\MainLib.csproj", "{8816AF68-0F31-4E03-AFB8-6BA46A49E61F}"
 EndProject
@@ -486,9 +486,6 @@ Global
 		{E603C6F5-F4B3-446F-B393-BC9ECFD91AB7} = {B9046190-09CA-4705-9E19-C80C74F4F360}
 		{F43A466B-ECF6-4EE2-A65F-1199DB91DE0E} = {5992A272-0DB3-4221-8920-10086AA56C7B}
 		{7107B5ED-15BE-4525-ACC4-80B0239334CF} = {875AC2B2-2C7C-45C0-B0E4-8BDE7F18FC8B}
-	EndGlobalSection
-	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {48A85F2D-97B7-49AA-B127-F019FC5779C7}
 	EndGlobalSection
 	GlobalSection(TestCaseManagementSettings) = postSolution
 		CategoryFile = MainLib.vsmdi

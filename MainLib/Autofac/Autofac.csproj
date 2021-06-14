@@ -42,9 +42,12 @@
   <ItemGroup>
     <Compile Include="Builder\ContainerBuildOptions.cs" />
     <Compile Include="Builder\DeferredCallback.cs" />
+    <Compile Include="Builder\MetadataConfiguration.cs" />
+    <Compile Include="Builder\MetadataKeys.cs" />
     <Compile Include="Class1.cs" />
     <Compile Include="ContainerBuilder.cs" />
     <Compile Include="Core\Container.cs" />
+    <Compile Include="Core\DependencyResolutionException.cs" />
     <Compile Include="Core\IActivatedEventArgs.cs" />
     <Compile Include="Core\IActivatingEventArgs.cs" />
     <Compile Include="Core\IComponentLifetime.cs" />
@@ -58,6 +61,20 @@
     <Compile Include="Core\IRegistrationSource.cs" />
     <Compile Include="Core\IServiceWithType.cs" />
     <Compile Include="Core\ISharingLifetimeScope.cs" />
+    <Compile Include="Core\Lifetime\CurrentScopeLifetime.cs" />
+    <Compile Include="Core\Lifetime\LifetimeScope.cs" />
+    <Compile Include="Core\Lifetime\LifetimeScopeBeginningEventArgs.cs" />
+    <Compile Include="Core\Lifetime\LifetimeScopeEndingEventArgs.cs" />
+    <Compile Include="Core\Lifetime\LifetimeScopeResources.Designer.cs" />
+    <Compile Include="Core\Lifetime\MatchingScopeLifetime.cs" />
+    <Compile Include="Core\Lifetime\MatchingScopeLifetimeResources.Designer.cs" />
+    <Compile Include="Core\Lifetime\MatchingScopeLifetimeTags.cs" />
+    <Compile Include="Core\Lifetime\RootScopeLifetime.cs" />
+    <Compile Include="Core\Parameter.cs" />
+    <Compile Include="Core\Service.cs" />
+    <Compile Include="Core\ServiceResources.Designer.cs" />
+    <Compile Include="Features\Collections\CollectionRegistrationSource.cs" />
+    <Compile Include="Features\Collections\CollectionRegistrationSourceResources.Designer.cs" />
     <Compile Include="Features\LazyDependencies\LazyRegistrationSource.cs" />
     <Compile Include="Features\LazyDependencies\LazyRegistrationSourceResources.Designer.cs" />
     <Compile Include="Features\LazyDependencies\LazyWithMetadataRegistrationSource.cs" />
@@ -82,10 +99,12 @@
     <Compile Include="Util\TypeExtensions.cs" />
     <Compile Include="Util\ValidatedNotNullAttribute.cs" />
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
-    <Folder Include="Features\Collections\" />
-  </ItemGroup>
-  <ItemGroup>
+    <EmbeddedResource Include="Core\Lifetime\LifetimeScopeResources.resx" />
+    <EmbeddedResource Include="Core\Lifetime\MatchingScopeLifetimeResources.resx" />
+    <EmbeddedResource Include="Core\ServiceResources.resx" />
+    <EmbeddedResource Include="Features\Collections\CollectionRegistrationSourceResources.resx" />
     <EmbeddedResource Include="Features\LazyDependencies\LazyRegistrationSourceResources.resx" />
     <EmbeddedResource Include="Features\LazyDependencies\LazyWithMetadataRegistrationSourceResources.resx" />
     <EmbeddedResource Include="Util\EnforceResources.resx" />
