@@ -45,10 +45,16 @@
     <Compile Include="Builder\DeferredCallback.cs" />
     <Compile Include="Builder\MetadataConfiguration.cs" />
     <Compile Include="Builder\MetadataKeys.cs" />
+    <Compile Include="Builder\RegistrationExtensions.cs" />
+    <Compile Include="Builder\RegistrationOrderExtensions.cs" />
     <Compile Include="Builder\StartableManager.cs" />
     <Compile Include="Class1.cs" />
     <Compile Include="ContainerBuilder.cs" />
     <Compile Include="ContainerBuilderResources.Designer.cs" />
+    <Compile Include="Core\ActivatedEventArgs.cs" />
+    <Compile Include="Core\ActivatingEventArgs.cs" />
+    <Compile Include="Core\AutoActivateService.cs" />
+    <Compile Include="Core\ComponentRegisteredEventArgs.cs" />
     <Compile Include="Core\Container.cs" />
     <Compile Include="Core\DependencyResolutionException.cs" />
     <Compile Include="Core\IActivatedEventArgs.cs" />
@@ -74,6 +80,8 @@
     <Compile Include="Core\Lifetime\MatchingScopeLifetimeTags.cs" />
     <Compile Include="Core\Lifetime\RootScopeLifetime.cs" />
     <Compile Include="Core\Parameter.cs" />
+    <Compile Include="Core\PreparingEventArgs.cs" />
+    <Compile Include="Core\RegistrationSourceAddedEventArgs.cs" />
     <Compile Include="Core\Registration\AdaptationSandbox.cs" />
     <Compile Include="Core\Registration\ComponentNotRegisteredException.cs" />
     <Compile Include="Core\Registration\ComponentNotRegisteredExceptionResources.Designer.cs" />
@@ -110,6 +118,10 @@
     <Compile Include="Core\ServiceResources.Designer.cs" />
     <Compile Include="Features\Collections\CollectionRegistrationSource.cs" />
     <Compile Include="Features\Collections\CollectionRegistrationSourceResources.Designer.cs" />
+    <Compile Include="Features\Decorators\DecoratorContext.cs" />
+    <Compile Include="Features\Decorators\DecoratorService.cs" />
+    <Compile Include="Features\Decorators\IDecoratorContext.cs" />
+    <Compile Include="Features\Decorators\InstanceDecorator.cs" />
     <Compile Include="Features\GeneratedFactories\FactoryGenerator.cs" />
     <Compile Include="Features\GeneratedFactories\GeneratedFactoryActivatorData.cs" />
     <Compile Include="Features\GeneratedFactories\GeneratedFactoryRegistrationExtensions.cs" />
