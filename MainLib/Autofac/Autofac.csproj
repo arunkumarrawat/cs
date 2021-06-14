@@ -41,10 +41,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Activators\Delegate\DelegateActivator.cs" />
+    <Compile Include="Activators\Delegate\DelegateActivatorResources.Designer.cs" />
     <Compile Include="Builder\ContainerBuildOptions.cs" />
     <Compile Include="Builder\DeferredCallback.cs" />
+    <Compile Include="Builder\IRegistrationBuilder.cs" />
     <Compile Include="Builder\MetadataConfiguration.cs" />
     <Compile Include="Builder\MetadataKeys.cs" />
+    <Compile Include="Builder\RegistrationBuilder.cs" />
+    <Compile Include="Builder\RegistrationBuilderResources.Designer.cs" />
+    <Compile Include="Builder\RegistrationBuilder{TLimit,TActivatorData,TRegistrationStyle}.cs" />
     <Compile Include="Builder\RegistrationExtensions.cs" />
     <Compile Include="Builder\RegistrationOrderExtensions.cs" />
     <Compile Include="Builder\StartableManager.cs" />
@@ -55,8 +61,11 @@
     <Compile Include="Core\ActivatingEventArgs.cs" />
     <Compile Include="Core\AutoActivateService.cs" />
     <Compile Include="Core\ComponentRegisteredEventArgs.cs" />
+    <Compile Include="Core\ConstantParameter.cs" />
     <Compile Include="Core\Container.cs" />
+    <Compile Include="Core\ContainerResources.Designer.cs" />
     <Compile Include="Core\DependencyResolutionException.cs" />
+    <Compile Include="Core\Disposer.cs" />
     <Compile Include="Core\IActivatedEventArgs.cs" />
     <Compile Include="Core\IActivatingEventArgs.cs" />
     <Compile Include="Core\IComponentLifetime.cs" />
@@ -116,6 +125,8 @@
     <Compile Include="Core\Resolving\ResolveOperationResources.Designer.cs" />
     <Compile Include="Core\Service.cs" />
     <Compile Include="Core\ServiceResources.Designer.cs" />
+    <Compile Include="Core\TypedService.cs" />
+    <Compile Include="Core\UniqueService.cs" />
     <Compile Include="Features\Collections\CollectionRegistrationSource.cs" />
     <Compile Include="Features\Collections\CollectionRegistrationSourceResources.Designer.cs" />
     <Compile Include="Features\Decorators\DecoratorContext.cs" />
@@ -144,6 +155,8 @@
     <Compile Include="Features\OwnedInstances\Owned.cs" />
     <Compile Include="Features\OwnedInstances\OwnedInstanceRegistrationSource.cs" />
     <Compile Include="Features\OwnedInstances\OwnedInstanceRegistrationSourceResources.Designer.cs" />
+    <Compile Include="Features\Scanning\ScanningActivatorData.cs" />
+    <Compile Include="Features\Scanning\ScanningRegistrationExtensions.cs" />
     <Compile Include="IComponentContext.cs" />
     <Compile Include="IContainer.cs" />
     <Compile Include="ILifetimeScope.cs" />
@@ -160,6 +173,9 @@
     <Compile Include="ResolutionExtensions.cs" />
     <Compile Include="ScanningFilterExtensions.cs" />
     <Compile Include="SourceRegistrationExtensions.cs" />
+    <Compile Include="TypedParameter.cs" />
+    <Compile Include="TypeExtensions.cs" />
+    <Compile Include="TypeExtensionsResources.Designer.cs" />
     <Compile Include="Util\AssemblyExtensions.cs" />
     <Compile Include="Util\Disposable.cs" />
     <Compile Include="Util\Enforce.cs" />
@@ -177,7 +193,10 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
+    <EmbeddedResource Include="Activators\Delegate\DelegateActivatorResources.resx" />
+    <EmbeddedResource Include="Builder\RegistrationBuilderResources.resx" />
     <EmbeddedResource Include="ContainerBuilderResources.resx" />
+    <EmbeddedResource Include="Core\ContainerResources.resx" />
     <EmbeddedResource Include="Core\Lifetime\LifetimeScopeResources.resx" />
     <EmbeddedResource Include="Core\Lifetime\MatchingScopeLifetimeResources.resx" />
     <EmbeddedResource Include="Core\Registration\ComponentNotRegisteredExceptionResources.resx" />
@@ -196,6 +215,7 @@
     <EmbeddedResource Include="Features\OwnedInstances\OwnedInstanceRegistrationSourceResources.resx" />
     <EmbeddedResource Include="ModuleResources.resx" />
     <EmbeddedResource Include="RegistrationExtensionsResources.resx" />
+    <EmbeddedResource Include="TypeExtensionsResources.resx" />
     <EmbeddedResource Include="Util\EnforceResources.resx" />
     <EmbeddedResource Include="Util\FallbackDictionaryResources.resx" />
     <EmbeddedResource Include="Util\ReflectionExtensionsResources.resx" />
