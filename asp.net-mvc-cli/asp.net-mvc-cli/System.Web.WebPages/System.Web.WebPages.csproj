@@ -49,12 +49,54 @@
     <Compile Include="DefaultDisplayMode.cs" />
     <Compile Include="DisplayInfo.cs" />
     <Compile Include="DisplayModeProvider.cs" />
+    <Compile Include="Html\HtmlHelper.Checkbox.cs" />
+    <Compile Include="Html\HtmlHelper.cs" />
+    <Compile Include="Html\HtmlHelper.Input.cs" />
+    <Compile Include="Html\HtmlHelper.Internal.cs" />
+    <Compile Include="Html\HtmlHelper.Label.cs" />
+    <Compile Include="Html\HtmlHelper.Radio.cs" />
+    <Compile Include="Html\HtmlHelper.Select.cs" />
+    <Compile Include="Html\HtmlHelper.TextArea.cs" />
+    <Compile Include="Html\HtmlHelper.Validation.cs" />
+    <Compile Include="Html\ModelState.cs" />
+    <Compile Include="Html\ModelStateDictionary.cs" />
+    <Compile Include="Html\SelectListItem.cs" />
     <Compile Include="IDisplayMode.cs" />
     <Compile Include="ITemplateFile.cs" />
     <Compile Include="IVirtualPathFactory.cs" />
     <Compile Include="IVirtualPathUtility.cs" />
     <Compile Include="IWebPageRequestExecutor.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Resources\WebPageResources.Designer.cs" />
+    <Compile Include="Scope\ApplicationScopeStorageDictionary.cs" />
+    <Compile Include="Scope\AspNetRequestScopeStorageProvider.cs" />
+    <Compile Include="Scope\IScopeStorageProvider.cs" />
+    <Compile Include="Scope\ScopeStorage.cs" />
+    <Compile Include="Scope\ScopeStorageComparer.cs" />
+    <Compile Include="Scope\ScopeStorageDictionary.cs" />
+    <Compile Include="Scope\StaticScopeStorageProvider.cs" />
+    <Compile Include="Scope\WebConfigScopeStorageDictionary.cs" />
+    <Compile Include="TemplateFileInfo.cs" />
+    <Compile Include="Utils\BuildManagerExceptionUtil.cs" />
+    <Compile Include="Utils\CultureUtil.cs" />
+    <Compile Include="Utils\HtmlAttributePropertyHelper.cs" />
+    <Compile Include="Utils\PathUtil.cs" />
+    <Compile Include="Utils\SessionStateUtil.cs" />
+    <Compile Include="Utils\TypeHelper.cs" />
+    <Compile Include="Utils\UrlRewriterHelper.cs" />
+    <Compile Include="Utils\UrlUtil.cs" />
+    <Compile Include="WebPage.cs" />
+    <Compile Include="WebPageBase.cs" />
+    <Compile Include="WebPageContext.cs" />
+    <Compile Include="WebPageExecutingBase.cs" />
+    <Compile Include="WebPageHttpHandler.cs" />
+    <Compile Include="WebPageHttpModule.cs" />
+    <Compile Include="WebPageMatch.cs" />
+    <Compile Include="WebPageRenderingBase.cs" />
+    <Compile Include="WebPageRoute.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\WebPageResources.resx" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
