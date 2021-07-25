@@ -1,9 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿// Copyright (c) .NET Foundation. All rights reserved.
+// Licensed under the Apache License, Version 2.0. See License.txt in the project root for license information.
 
+using System;
 using System.ComponentModel;
 using System.Globalization;
 using System.Web;
@@ -57,15 +55,6 @@ namespace Microsoft.Web.Mvc.Controls
         {
             get { return _truncateText ?? String.Empty; }
             set { _truncateText = value; }
-        }
-
-        /// <summary>
-        /// open public interface
-        /// </summary>
-        /// <param name="writer"></param>
-        public void PublicRender(HtmlTextWriter writer)
-        {
-            this.Render(writer);
         }
 
         protected override void Render(HtmlTextWriter writer)

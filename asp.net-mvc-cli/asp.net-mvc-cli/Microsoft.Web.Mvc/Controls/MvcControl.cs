@@ -1,14 +1,16 @@
-﻿using System;
+﻿// Copyright (c) .NET Foundation. All rights reserved.
+// Licensed under the Apache License, Version 2.0. See License.txt in the project root for license information.
+
+using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.ComponentModel;
 using System.Web.Mvc;
 using System.Web.UI;
 
 namespace Microsoft.Web.Mvc.Controls
 {
+    // TODO: Consider using custom HTML writer instead of the default one to get prettier rendering
+
     public abstract class MvcControl : Control, IAttributeAccessor
     {
         private IDictionary<string, string> _attributes;
