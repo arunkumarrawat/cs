@@ -1,0 +1,17 @@
+﻿<Window x:Class="Panel.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Panel"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="325" Width="590">
+    <Grid>
+        <Button x:Name="btn_ncpa" Content="ncpa.cpl" HorizontalAlignment="Left" Margin="95,92,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="-0.973,-1.6" Click="btn_ncpa_Click"/>
+        <Button x:Name="btn_locale" Content="System Locale - intl.cpl" HorizontalAlignment="Left" Margin="192,92,0,0" VerticalAlignment="Top" Width="135" Click="btn_locale_Click"/>
+        <Button x:Name="btn_system_property" Content="System Property - sysdm.cpl" HorizontalAlignment="Left" Margin="343,92,0,0" VerticalAlignment="Top" Width="157" Click="btn_system_property_Click"/>
+        <Button x:Name="btn_desktop" Content="desktop.cpl" HorizontalAlignment="Left" Margin="95,134,0,0" VerticalAlignment="Top" Width="75" Click="btn_desktop_Click"/>
+        <Button x:Name="btn_iis" Content="IIS Manager" HorizontalAlignment="Left" Margin="192,134,0,0" VerticalAlignment="Top" Width="135" Click="btn_iis_Click"/>
+
+    </Grid>
+</Window>

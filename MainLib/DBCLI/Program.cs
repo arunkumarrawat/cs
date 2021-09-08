@@ -5,11 +5,24 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Configuration;
 using DBCLI.sageConfig;
+using System.Diagnostics;
 
 namespace DBCLI
 {
     class Program
     {
+        private static void OnEntryWritten(object source, EntryWrittenEventArgs e)
+        {
+            string watchLog = "System";
+            string logName = watchLog;
+            int e1 = 0;
+            EventLog log = new EventLog(logName);
+            e1 = log.Entries.Count - 1; // last entry
+            Console.WriteLine(log.Entries[e1].Message);
+            log.Close();  // close log
+        }
+
+
         static void Main(string[] args)
         {
 
@@ -33,6 +46,17 @@ namespace DBCLI
                     instance.Server,
                     instance.InstallationName);
             }
+
+            while (true)
+            {
+                string watchLog = "System";
+                EventLog myLog = new EventLog(watchLog);
+                // set event handler
+                myLog.EntryWritten += new EntryWrittenEventHandler(OnEntryWritten);
+                myLog.EnableRaisingEvents = true;
+            }
+
+
         }
     }
 }
