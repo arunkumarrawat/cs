@@ -42,7 +42,7 @@ namespace Panel
 
         private void btn_desktop_Click(object sender, RoutedEventArgs e)
         {
-            System.Diagnostics.Process.Start("control", "desktop.cpl");
+            System.Diagnostics.Process.Start("control", "desk.cpl");
         }
 
         private void btn_iis_Click(object sender, RoutedEventArgs e)
@@ -52,6 +52,11 @@ namespace Panel
             p.StartInfo.FileName = System.IO.Path.GetFileName(path);
             p.StartInfo.WorkingDirectory = System.IO.Path.GetDirectoryName(path);
             p.Start();
+        }
+
+        private void btn_appwiz_Click(object sender, RoutedEventArgs e)
+        {
+            System.Diagnostics.Process.Start("control", "appwiz.cpl");
         }
     }
 }
