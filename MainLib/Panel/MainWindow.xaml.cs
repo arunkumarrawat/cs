@@ -47,7 +47,7 @@ namespace Panel
 
         private void btn_iis_Click(object sender, RoutedEventArgs e)
         {
-            string path = @"C:\Windows\SysWOW64\inetsrv\InetMgr.exe";
+            string path = @"C:\Windows\System32\inetsrv\InetMgr.exe";
             System.Diagnostics.Process p = new System.Diagnostics.Process();
             p.StartInfo.FileName = System.IO.Path.GetFileName(path);
             p.StartInfo.WorkingDirectory = System.IO.Path.GetDirectoryName(path);
