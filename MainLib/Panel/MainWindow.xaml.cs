@@ -27,36 +27,55 @@ namespace Panel
 
         private void btn_ncpa_Click(object sender, RoutedEventArgs e)
         {
-            System.Diagnostics.Process.Start("control", "ncpa.cpl");
+            startProcess("control", "ncpa.cpl");
         }
 
         private void btn_locale_Click(object sender, RoutedEventArgs e)
         {
-            System.Diagnostics.Process.Start("control", "intl.cpl");
+            startProcess("control", "intl.cpl");
         }
 
         private void btn_system_property_Click(object sender, RoutedEventArgs e)
         {
-            System.Diagnostics.Process.Start("control", "sysdm.cpl");
+            startProcess("control", "sysdm.cpl");
         }
 
         private void btn_desktop_Click(object sender, RoutedEventArgs e)
         {
-            System.Diagnostics.Process.Start("control", "desk.cpl");
+            startProcess("control", "desk.cpl");
         }
 
         private void btn_iis_Click(object sender, RoutedEventArgs e)
         {
-            string path = @"C:\Windows\System32\inetsrv\InetMgr.exe";
-            System.Diagnostics.Process p = new System.Diagnostics.Process();
-            p.StartInfo.FileName = System.IO.Path.GetFileName(path);
-            p.StartInfo.WorkingDirectory = System.IO.Path.GetDirectoryName(path);
-            p.Start();
+            try
+            {
+                string path = @"C:\Windows\System32\inetsrv\InetMgr.exe";
+                System.Diagnostics.Process p = new System.Diagnostics.Process();
+                p.StartInfo.FileName = System.IO.Path.GetFileName(path);
+                p.StartInfo.WorkingDirectory = System.IO.Path.GetDirectoryName(path);
+                p.Start();
+            } 
+            catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
         private void btn_appwiz_Click(object sender, RoutedEventArgs e)
         {
-            System.Diagnostics.Process.Start("control", "appwiz.cpl");
+            startProcess("control", "appwiz.cpl");
+        }
+
+        private void startProcess(string filename, string argument)
+        {
+            try
+            {
+                System.Diagnostics.Process.Start(filename, argument);
+            } 
+            catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
     }
 }
