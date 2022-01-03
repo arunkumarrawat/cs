@@ -16,5 +16,10 @@ namespace StartProgramManage
         {
             InitializeComponent();
         }
+
+        private void StartProgramManage_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
