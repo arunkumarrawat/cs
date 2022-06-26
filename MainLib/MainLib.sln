@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.31205.134
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31919.166
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MainLib", "MainLib\MainLib.csproj", "{8816AF68-0F31-4E03-AFB8-6BA46A49E61F}"
 EndProject
@@ -87,6 +87,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Autofac-CLI", "Autofac-CLI\Autofac-CLI.csproj", "{7107B5ED-15BE-4525-ACC4-80B0239334CF}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Panel", "Panel\Panel.csproj", "{B3D96530-37B7-46DD-B3BC-B7EA993E90C4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExcelHelper", "ExcelHelper\ExcelHelper.csproj", "{CC780169-E929-46BC-BAEB-F330D37C170B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -474,6 +476,18 @@ Global
 		{B3D96530-37B7-46DD-B3BC-B7EA993E90C4}.Release|x64.Build.0 = Release|Any CPU
 		{B3D96530-37B7-46DD-B3BC-B7EA993E90C4}.Release|x86.ActiveCfg = Release|Any CPU
 		{B3D96530-37B7-46DD-B3BC-B7EA993E90C4}.Release|x86.Build.0 = Release|Any CPU
+		{CC780169-E929-46BC-BAEB-F330D37C170B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CC780169-E929-46BC-BAEB-F330D37C170B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CC780169-E929-46BC-BAEB-F330D37C170B}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{CC780169-E929-46BC-BAEB-F330D37C170B}.Debug|x64.Build.0 = Debug|Any CPU
+		{CC780169-E929-46BC-BAEB-F330D37C170B}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{CC780169-E929-46BC-BAEB-F330D37C170B}.Debug|x86.Build.0 = Debug|Any CPU
+		{CC780169-E929-46BC-BAEB-F330D37C170B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CC780169-E929-46BC-BAEB-F330D37C170B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CC780169-E929-46BC-BAEB-F330D37C170B}.Release|x64.ActiveCfg = Release|Any CPU
+		{CC780169-E929-46BC-BAEB-F330D37C170B}.Release|x64.Build.0 = Release|Any CPU
+		{CC780169-E929-46BC-BAEB-F330D37C170B}.Release|x86.ActiveCfg = Release|Any CPU
+		{CC780169-E929-46BC-BAEB-F330D37C170B}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -501,6 +515,7 @@ Global
 		{F43A466B-ECF6-4EE2-A65F-1199DB91DE0E} = {5992A272-0DB3-4221-8920-10086AA56C7B}
 		{7107B5ED-15BE-4525-ACC4-80B0239334CF} = {875AC2B2-2C7C-45C0-B0E4-8BDE7F18FC8B}
 		{B3D96530-37B7-46DD-B3BC-B7EA993E90C4} = {B9046190-09CA-4705-9E19-C80C74F4F360}
+		{CC780169-E929-46BC-BAEB-F330D37C170B} = {B9046190-09CA-4705-9E19-C80C74F4F360}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {48A85F2D-97B7-49AA-B127-F019FC5779C7}
