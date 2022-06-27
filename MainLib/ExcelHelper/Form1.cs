@@ -10,6 +10,7 @@ namespace ExcelHelper
             InitializeComponent();
             txtTimeSheetCSVFile.Text = @"C:\test\timesheet.csv";
             txtDateCSVFile.Text = @"C:\test\date.csv";
+            txtOutputFile.Text = @"C:\test\output.csv";
         }
 
         private void btnTimeSheetInput_Click(object sender, EventArgs e)
@@ -43,8 +44,6 @@ namespace ExcelHelper
             List<string> listTimeSheet = CSVHelper.readFile(txtTimeSheetCSVFile.Text);
             List<string> listDate = CSVHelper.readFile(txtDateCSVFile.Text);
 
-            List<string> listRegex = new List<string>() {"M +\\(*.*\\)"};
-
             string regex = "([a-zA-Z ]+)\\([0-9\\.]+\\)";
 
             Dictionary<string, int> dict = new Dictionary<string, int>();
@@ -72,8 +71,9 @@ namespace ExcelHelper
                         sb.AppendLine(string.Format("{0},{1}", id, td[0]));
                     }
                 }
+                dict.Clear();
             }
-            string outputPath = "C:\\test\\output.csv";
+            string outputPath = txtOutputFile.Text;
             File.WriteAllText(outputPath, sb.ToString());
             MessageBox.Show(string.Format("output to {0} successfully!! ", outputPath));
         }

@@ -33,6 +33,8 @@
             this.btnTimeSheetInput = new System.Windows.Forms.Button();
             this.btnDate = new System.Windows.Forms.Button();
             this.btnConverter = new System.Windows.Forms.Button();
+            this.txtOutputFile = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // txtTimeSheetCSVFile
@@ -71,7 +73,7 @@
             // 
             // btnConverter
             // 
-            this.btnConverter.Location = new System.Drawing.Point(150, 192);
+            this.btnConverter.Location = new System.Drawing.Point(150, 216);
             this.btnConverter.Name = "btnConverter";
             this.btnConverter.Size = new System.Drawing.Size(75, 23);
             this.btnConverter.TabIndex = 4;
@@ -79,11 +81,29 @@
             this.btnConverter.UseVisualStyleBackColor = true;
             this.btnConverter.Click += new System.EventHandler(this.btnConverter_Click);
             // 
+            // txtOutputFile
+            // 
+            this.txtOutputFile.Location = new System.Drawing.Point(150, 170);
+            this.txtOutputFile.Name = "txtOutputFile";
+            this.txtOutputFile.Size = new System.Drawing.Size(236, 23);
+            this.txtOutputFile.TabIndex = 5;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(408, 173);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(45, 15);
+            this.label1.TabIndex = 6;
+            this.label1.Text = "Output";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(764, 324);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.txtOutputFile);
             this.Controls.Add(this.btnConverter);
             this.Controls.Add(this.btnDate);
             this.Controls.Add(this.btnTimeSheetInput);
@@ -102,5 +122,7 @@
         private Button btnTimeSheetInput;
         private Button btnDate;
         private Button btnConverter;
+        private TextBox txtOutputFile;
+        private Label label1;
     }
 }
